@@ -57,7 +57,7 @@ jeewx的目的是最大化的简化微信开发的流程，使用开发者能把
 * 	资源1： 受Maven折磨的同学来福利了，Eclipse非maven版本下载地址
 * 	JEECG 开发平台(V3系列-NEW)
 * 	JEEWX微信管家系统（V2系列-NEW）
-* 	[链接](http://www.jeecg.org/forum.php?mod=viewthread&tid=1229&extra=page%3D1)
+* 	[下载地址](http://www.jeecg.org/forum.php?mod=viewthread&tid=1229&extra=page%3D1)
 
 
 商业版本介绍
