@@ -1,4 +1,3 @@
-
 JeeWx, 敏捷微信开发，简称“捷微”.
 ===============
 捷微是一款免费开源的JAVA微信公众账号开发平台.
@@ -36,12 +35,13 @@ jeewx的目的是最大化的简化微信开发的流程，使用开发者能把
 *   10，角色管理
 *   11，菜单管理
 *   12, 微信支持多用户多公众号
- *  13，微信大转盘
- *  14，微信刮刮乐
- *  15，微信CMS
- *  16，自定义接口回复
- *  17，翻译
- *  18，天气
+*   13，微信大转盘
+*   14，微信刮刮乐
+*   15，微信CMS
+*   16，自定义接口回复
+*   17，翻译
+*   18，天气
+    更多功能参考官方：www.jeecg.org
 
 
 最低系统需求
@@ -52,6 +52,22 @@ jeewx的目的是最大化的简化微信开发的流程，使用开发者能把
 
 
 
+-福利贴-
+-----------------------------------
+* 	资源1： 受Maven折磨的同学来福利了，Eclipse非maven版本下载地址
+* 	JEECG 开发平台(V3系列-NEW)
+* 	JEEWX微信管家系统（V2系列-NEW）
+* 	[链接](http://www.jeecg.org/forum.php?mod=viewthread&tid=1229&extra=page%3D1)
+
+
+商业版本介绍
+-----------------------------------
+*   [商业版本演示地址](http://www.jeewx.com/jeewx)
+*   测试账号：ceshi
+*   测试密码:  123456 
+*   [想获得更多技术支持和更多功能请购买商业版本；](http://mp.weixin.qq.com/s?__biz=MjM5NjA2OTkxMg==&mid=200331077&idx=1&sn=6a55fd8a4a8c36678fb4908343d22dd4#rd)
+*   商务QQ：418799587
+
 系统安装
 -----------------------------------
 * 	1、将jeewx压缩包解压并上传到服务器。
@@ -61,13 +77,14 @@ jeewx的目的是最大化的简化微信开发的流程，使用开发者能把
         URL:   http://*地址*/jeewx/wechatController.do?wechat<br>
         Token:  jeecg<br>
 * 	5.云服务平台建议，可以采用MoPaaS
+*       6. [Maven开发环境搭建文档](http://www.jeecg.org/forum.php?mod=viewthread&tid=2080&extra=page%3D2) 
 
 联系方式
 -----------------------------------
 * 	QQ 交流群 : 287090836
-* 	官网:      http://www.jeewx.com
+* 	官网:      www.jeewx.com
 * 	官方邮件：  scott@jeecg.org
-* 	联系QQ：418799587(承接项目)
+
 
 ![github](http://img.blog.csdn.net/20140706133652718?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvemhhbmdkYWlzY290dA==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/Center "jeewx")
 ![github](http://img.blog.csdn.net/20140706133543390?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvemhhbmdkYWlzY290dA==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/Center "jeewx")
