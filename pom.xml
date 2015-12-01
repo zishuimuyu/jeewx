@@ -2,7 +2,7 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>org.jeecgframework</groupId>
-	<version>2.0</version>
+	<version>2.1</version>
 	<artifactId>jeewx</artifactId>
 	<packaging>war</packaging>
 	<properties>
@@ -26,14 +26,10 @@
 		<javassist.version>3.15.0-GA</javassist.version>
 		<ant.version>1.6.5</ant.version>
 
-		<!-- todo 没有用到 <spring-jpa.versoin>2.0.8</spring-jpa.versoin>
-		<mybatis-spring.version>1.1.1</mybatis-spring.version>
-		-->
 		
 		<!-- 工具包 -->
         <!-- json start -->
 		<jackson.version>1.8.4</jackson.version>
-        <!-- todo 没有用到 <jackson2.version>2.1.2</jackson2.version>-->
         <jacksonframework.version>1.84</jacksonframework.version>
 		<json-lib.version>2.1</json-lib.version>
 		<fastjson-lib.version>1.1.37</fastjson-lib.version>
@@ -83,14 +79,6 @@
 
 		<!-- 测试依赖包 -->
 		<junit.version>4.7</junit.version>
-        <!-- todo 没有用到 <hamcrest.version>1.3</hamcrest.version>-->
-		<!-- todo 没有用到 <mockito.version>1.9.5</mockito.version>-->
-		<!-- todo 没有用到 <powermock.version>1.5</powermock.version>-->
-		<!-- todo 没有用到 <selenium.version>2.28.0</selenium.version>-->
-		<!-- todo 没有用到 <jetty.version>7.6.8.v20121106</jetty.version>-->
-		<!-- Plugin的属性定义 -->
-		<!-- todo 没有用到 <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>-->
-        <!-- todo 没有用到 <jdk.version>1.6</jdk.version>-->
 
 		<CKFinder.version>2.4</CKFinder.version>
         <!-- java生成缩略图 -->
@@ -144,16 +132,6 @@
 				<enabled>false</enabled>
 			</snapshots>
         </repository>
-		<!--
-		<repository>
-			<id>osc</id>
-			<name>oschina</name>
-			<url>http://maven.oschina.net/content/groups/public/</url>
-			<snapshots>
-				<enabled>false</enabled>
-			</snapshots>
-		</repository>
-		 -->
 	</repositories>
 
 	<dependencies>
@@ -316,34 +294,6 @@
 			<version>${spring.version}</version>
 		</dependency>
 
-		<!--工作流依赖包 -->
-		<!--
-		<dependency>
-			<groupId>org.activiti</groupId>
-			<artifactId>activiti-engine</artifactId>
-			<version>${activiti.version}</version>
-		</dependency>
-		<dependency>
-			<groupId>org.activiti</groupId>
-			<artifactId>activiti-spring</artifactId>
-			<version>${activiti.version}</version>
-		</dependency>
-		-->
-		
-		
-		<!-- mybatis
-		<dependency>
-			<groupId>org.mybatis</groupId>
-			<artifactId>mybatis</artifactId>
-			<version>${mybatis.version}</version>
-		</dependency>
-		
-		<dependency>
-			<groupId>org.mybatis</groupId>
-			<artifactId>mybatis-spring</artifactId>
-			<version>${mybatis-spring.version}</version>
-		</dependency>
- 		-->
 
 		<!-- 数据库相关依赖包 _start -->
         <!--proxool start -->
@@ -718,11 +668,6 @@
 			<version>${junit.version}</version>
 		</dependency>
         <!-- hamcrest -->
-        <!--<dependency>
-            <groupId>org.hamcrest</groupId>
-            <artifactId>hamcrest-all</artifactId>
-            <version>${hamcrest.version}</version>
-        </dependency>-->
 
 		<!-- spring -->
 		<dependency>
@@ -790,19 +735,19 @@
 			<artifactId>baidu-sdk</artifactId>
 			<version>1.4.5</version>
 		</dependency>
-		<!-- 付明星加入httpclient -->
+		<!-- httpclient -->
 		<dependency>
 		  <groupId>commons-httpclient</groupId>
 		  <artifactId>commons-httpclient</artifactId>
 		  <version>3.0.1</version>
 		</dependency>
-		<!-- 付明星加入jaxen -->
+		<!-- jaxen -->
 		<dependency>
 		  <groupId>jaxen</groupId>
 		  <artifactId>jaxen</artifactId>
 		  <version>1.1.6</version>
 		</dependency>
-		<!-- 付明星加入jaxen -->
+		<!-- jaxen -->
 		<dependency>
 		  <groupId>commons-codec</groupId>
 		  <artifactId>commons-codec</artifactId>
@@ -811,7 +756,7 @@
 	</dependencies>
 
 	<organization>
-		<name>JeeWx微信公众账号开发平台</name>
+		<name>JeeWx 微信管家平台</name>
 		<url>www.jeewx.com</url>
 	</organization>
 	<build>

@@ -8,10 +8,24 @@
   <title>菜单信息录入</title>
   <t:base type="jquery,easyui,tools"></t:base>
  <script type="text/javascript">
+ 	$(function() {
+		$('#fatherName').combotree({
+			url : 'menuManagerController.do?treeMenu',
+			onClick: function(node){
+				if (node.state){//有值代表一级菜单
+					$("#state").val(node.state);
+				} else {
+					$("#state").val('no');
+				}
+			}
+		});
+	});
  	$(document).ready(function(){ 
+ 		var fid = "${fatherId}";
  	   var msgType = "${msgType}";
+ 	   var type="${type}";
  	   var templateId = "${templateId}";
- 	   var supMenuId="${fatherName}";
+ 	   //var supMenuId="${fatherName}";
  	   if(templateId){
  	   		var templateObj = $("#templateId");
 	 		templateObj.html("");
@@ -42,30 +56,7 @@
 	 			}
 	 		});
  	   }
- 	
- 	
  	   
- 	   if(true){
- 	   		var supMenuIdObj = $("#fatherName");
-	 		supMenuIdObj.html("");
-	 		$.ajax({
-	 			url:"menuManagerController.do?getSubMenu",
-	 			data:{"msgType":msgType},
-	 			dataType:"JSON",
-	 			type:"POST",
-	 			success:function(data){
-	 				var msg="";
-	 				for(var i=0;i<data.length;i++){
-	 				   
-	 				 
-	 				    	
-	 				    		msg += "<option value='"+data[i].id+"' selected='selected'>"+data[i].name+"</option>";
-	 				   
-	 				}
-	 				supMenuIdObj.html(msg);
-	 			}
-	 		});
- 	   }
  		$("#type").change(function(){
  			var selectValue = $(this).children('option:selected').val();
  			
@@ -77,11 +68,15 @@
  				var inputAttr = $("input[name='msgType']");
  				for(var i=0;i<inputAttr.length;i++){
  					$(inputAttr[i]).removeAttr("disabled");
+ 					$(inputAttr[i]).attr("datatype","*");
  				}
  				
  				$("#templateTr").removeAttr("style");
  				$("#templateId").removeAttr("disabled");
  				
+ 				//设置消息类型和验证
+ 				$("#msgType").attr("datatype","*");
+ 				$("#templateId").attr("datatype","*");
  			}else{
  				$("#url").removeAttr("disabled");
  				$("#trurl").removeAttr("style");
@@ -90,10 +85,14 @@
  				var inputAttr = $("input[name='msgType']");
  				for(var i=0;i<inputAttr.length;i++){
  					$(inputAttr[i]).attr("disabled","disabled");
+ 					$(inputAttr[i]).removeAttr("datatype");
  				}
  				
  				$("#templateTr").attr("style","display:none");
  				$("#templateId").attr("disabled","disabled");
+ 				//取消验证。防止无法提交
+ 				$("#msgType").removeAttr("datatype");
+ 				$("#templateId").removeAttr("datatype");
  			}
  		});
  		
@@ -116,11 +115,22 @@
 		if("click" == typeVal){
 			$("#xxtr").show();
 			$("#trurl").hide();
+			$("#templateTr").show();
+			//设置消息类型和验证
+			$("#msgType").attr("datatype","*");
+			$("#templateId").attr("datatype","*");
 		}else if("view" == typeVal){
 			$("#xxtr").hide();
 			$("#trurl").show();
+			$("#templateTr").hide();
+			$("#msgType").removeAttr("datatype");
+			$("#templateId").removeAttr("datatype");
 		}
-			
+		
+		if (typeof(fatherId) == "undefined"){  
+			$("#msgType").removeAttr("datatype");
+			$("#templateId").removeAttr("datatype");
+		}
 			
  	});
  	
@@ -146,11 +156,18 @@
  			}
  		});
  	}
+ 	function btnSubmit(){
+ 		var state = $('#state').val();
+ 		if (state == 'no'){
+ 			alert('二级菜单不能再扩展');
+ 			return false;
+ 		}
+ 	}
  </script>
  </head>
  <body style="overflow-y: hidden" scroll="no">
-  <t:formvalid formid="formobj" dialog="true" usePlugin="password" layout="table" action="menuManagerController.do?su">
-
+  <t:formvalid formid="formobj" dialog="true" usePlugin="password" layout="table" action="menuManagerController.do?su" beforeSubmit="btnSubmit">
+	<input id="state" name="state" type="hidden">
   <c:if test="${menuEntity.id!=null}">
   	<input id="id" name="id" type="hidden" value="${menuEntity.id}">
   </c:if>
@@ -181,11 +198,13 @@
       </label>
      </td>
      <td colspan="3" class="value">
+      <!-- 
       <select name="fatherName" id="fatherName">
       	
       </select>
-     <!--   <input id="c" class="inputxt"  name="fatherName"  value="${fatherName}">-->
-      <span class="Validform_checktip">请输入上级菜单！</span>
+       -->
+      <input id="fatherName" name="fatherName" value="${fatherId}" />
+      <span class="Validform_checktip">请选择上级菜单！</span>
      </td>
     </tr>
     
@@ -213,7 +232,7 @@
      </td>
      <td colspan="3" class="value">
       <input id="url" class="inputxt" name="url" value="${url}"  style="width: 300px"><!-- disabled="disabled"  地址不能编辑？？ 业务不了解。所以先注释掉 --> 
-      <span class="Validform_checktip">填写url</span>
+      <span class="Validform_checktip">填写url，格式需要以http开头</span>
      </td>
     </tr>
     
@@ -224,14 +243,14 @@
       </label>
      </td>
      <td class="value" colspan="3">
-        <input type="radio" value="text" name="msgType" datatype="*"  <c:if test="${msgType=='text'}">checked="checked"</c:if>/>文本
+        <input type="radio" value="text" name="msgType" id="msgType" datatype="*"  <c:if test="${msgType=='text'}">checked="checked"</c:if>/>文本
         <input type="radio" value="news" name="msgType"  <c:if test="${msgType=='news'}">checked="checked"</c:if>/>图文
         <input type="radio" value="expand" name="msgType"  <c:if test="${msgType=='expand'}">checked="checked"</c:if>/>扩展
       <span class="Validform_checktip">选择消息类型</span>
      </td>
     </tr>
     
-    <tr id="templateTr" style="width:65px">
+    <tr id="templateTr" style="width:65px" >
      <td align="right">
       <label class="Validform_label">
        选择模板:
@@ -264,7 +283,7 @@
       </label>
      </td>
      <td class="value" colspan="3">
-      <input id="orders" class="inputxt" name="orders" value="${orders}" >
+      <input id="orders" class="inputxt" name="orders" value="${orders}" datatype="num">
       <span class="Validform_checktip">填写显示顺序</span>
      </td>
     </tr> 

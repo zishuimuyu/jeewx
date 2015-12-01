@@ -1,21 +1,18 @@
-1. ±ê×¼¿ª·¢»·¾³£ºeclipse + maven + jdk7 + tomcat7 + mysql
 
-2. ±ØĞëÊÖ¹¤Ö´ĞĞSQL½Å±¾ (×Ô¶¯³õÊ¼»¯µÄ·½Ê½ÒÑ×÷·Ï)
-    doc\db\jeewx2.0-mysql.sql
-	ËµÃ÷£ºÄ¿Ç°ÉçÇøÖ»Ìá¹©mysql½Å±¾Ò»ÖÖ£¬ÆäËûÊı¾İ¿â´ó¼Ò¿ÉÒÔÍ¨¹ınavicat×Ô¼º×ª»¯
-	       ¾ßÌå·½·¨²Î¿¼:http://www.jeecg.org/forum.php?mod=viewthread&tid=2746&extra=page%3D2
-		   
-3. MavenÏÂÔØÓĞÎÊÌâ£¬¿ÉÒÔÏÂÔØÉçÇøÌá¹©±¾µØmaven²Ö¿â,ÅäÖÃÔÚ±¾µØ
-   http://www.jeecg.org/forum.php?mod=viewthread&tid=1805&extra=page%3D2
+1. æ ‡å‡†å¼€å‘ç¯å¢ƒ
+   eclipse + maven + jdk7 + tomcat7 + mysql
 
-4. jeewx¼¼ÊõÎÄµµ£º
-	Á´½Ó: http://pan.baidu.com/s/1eQouFNc ÃÜÂë: ubjx
-	Á´½Ó: http://pan.baidu.com/s/1jGl4HMI ÃÜÂë: 20vq
+2. å¿…é¡»æ‰‹å·¥æ‰§è¡ŒSQLè„šæœ¬,åˆ›å»ºUTF-8ç¼–ç æ•°æ®åº“jeewx
+        è„šæœ¬ï¼šdoc\db\jeewx2.0-mysql.sql
 
-5. Jeewx¿ª·¢ÈëÃÅÊÓÆµ
-    http://www.jeecg.org/forum.php?m ... &extra=page%3D1
+3. jeewxæŠ€æœ¯æ–‡æ¡£ï¼š
+	é“¾æ¥: http://pan.baidu.com/s/1eQouFNc å¯†ç : ubjx
+	é“¾æ¥: http://pan.baidu.com/s/1jGl4HMI å¯†ç : 20vq
+
+4. ã€è§†é¢‘æ•™ç¨‹ã€‘JeeWx å¾®ä¿¡å¼€å‘å…¥é—¨è§†é¢‘
+    http://www.jeecg.org/forum.php?mod=viewthread&tid=2309&extra=page%3D1
 	
-6. ²»ÊìÏ¤mavenµÄÍ¬Ñ§£¬¿ÉÒÔÏÂÔØ·Çmaven°æ±¾
-   ÏÂÔØµØÖ·: http://pan.baidu.com/s/1eQ0aZ66 ÃÜÂë: vgst
+5. æ›´å¤šæŠ€æœ¯èµ„æ–™ï¼Œè¯·è®¿é—®å®˜æ–¹è®ºå›
+    www.jeecg.org   
    
-   ×¢Òâ£º ²»Ö§³Öjdk8;±ØĞëÊÖ¹¤Ö´ĞĞdoc\dbÏÂµÄÊı¾İ¿â½Å±¾	
+   æ³¨æ„ï¼š ä¸æ”¯æŒjdk8;å¿…é¡»æ‰‹å·¥æ‰§è¡Œdoc\dbä¸‹çš„æ•°æ®åº“è„šæœ¬	

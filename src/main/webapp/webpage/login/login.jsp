@@ -103,6 +103,11 @@ label.iPhoneCheckLabelOn span {
                         </div>
                         <div class="clear"></div>
                     </div>
+                     <div>
+                        <div style="float: right; margin-left:-220px; margin-right: 40px;">
+                           	 技术支持： <font color="red">捷微管家</font>   &nbsp;&nbsp;&nbsp;  商业版咨询QQ: <font color="red">418799587</font> &nbsp;&nbsp;&nbsp;  官网: <font color="red"><a href="http://www.jeewx.com" target="_blank">www.jeewx.com</a></font> 
+                        </div>
+                    </div>
                 </form>
             </div>
         </div>
@@ -111,7 +116,7 @@ label.iPhoneCheckLabelOn span {
     <!--Login div-->
     <div class="clear"></div>
     <div id="versionBar">
-        <div class="copyright">&copy; 版权所有 <span class="tip"><a href="http://www.jeewx.com" title="JEEWX 捷微：敏捷微信开发">捷微 JeeWx</a> (推荐使用IE8+,谷歌浏览器可以获得更快,更安全的页面响应速度)技术支持:<a href="http://www.jeecg.org" title="JEECG 开源社区">JEECG 开源社区</a></span></div>
+        <div class="copyright">&copy; 版权所有 <span class="tip"><a href="http://www.jeewx.com" title="Jeewx 捷微管家平台" target="_blank">JeeWx 捷微管家平台</a> (推荐使用IE8+,谷歌浏览器可以获得更快,更安全的页面响应速度) 技术支持: <a href="http://www.jeecg.org" title="JEECG 开源社区" target="_blank">JEECG 开源社区</a></span></div>
     </div>
     <!-- Link JScript-->
     <script type="text/javascript" src="plug-in/jquery/jquery-1.8.3.min.js"></script>

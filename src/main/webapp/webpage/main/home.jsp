@@ -9,20 +9,16 @@
 	                    <p>5分钟轻松建站<br>打造酷炫微官网</p>
 	                </li>
                 </a>
-                <a href="weixinVipController.do?goPage&page=index" target="_blank">
                 <li>
                     <img src="./plug-in/weixin/img/func02.jpg" width="105" height="107">
                     <h3>微信会员卡</h3>
                     <p>方便携带 永不挂失<br>消费积分 一卡配备</p>
                 </li>
-                </a>
-                <a href="weixinShopController.do?goPage&page=index&openId=1234&accountid=${sessionScope.WEIXIN_ACCOUNT.id}" target="_blank">
-	                <li>
-	                    <img src="./plug-in/weixin/img/func03.jpg" width="107" height="107">
-	                    <h3>微商城</h3>
-	                    <p>小微信也有大商城<br>电商轻松就能走入微信</p>
-	                </li>
-                </a>
+                <li>
+                    <img src="./plug-in/weixin/img/func03.jpg" width="107" height="107">
+                    <h3>微商城</h3>
+                    <p>小微信也有大商城<br>电商轻松就能走入微信</p>
+                </li>
                 <a href="cmsController.do?goPage&page=photoAlbum" target="_blank">
                 	<li>
                     	<img src="./plug-in/weixin/img/func04.jpg" width="106" height="107">

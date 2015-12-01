@@ -1,4 +1,4 @@
-JeeWx, 敏捷微信开发，简称“捷微”.
+JeeWx, 微信管家平台，简称“捷微”.
 ===============
 捷微是一款免费开源的JAVA微信公众账号开发平台.
 ===============
@@ -8,8 +8,8 @@ JeeWx, 敏捷微信开发，简称“捷微”.
 
 一、简介
 -----------------------------------
-jeewx是一个开源，高效，敏捷的微信开发平台采用JAVA语言，它是基于jeecg这个企业级快速开发框架实现的。
-jeewx的目的是最大化的简化微信开发的流程，使用开发者能把最好的精力放到微信具体业务开发，并能以最快的时间完成。把一些常规而频繁的工作交由jeewx来处理即可，平台兼备的代码生成器，在线开发，可以快速的完成企业应用。为此jeewx提供了详细的二次开发文档，关键代码里还是相关的注释说明。jeewx采用插件的方式实现微信功能，不同的插件实现不同的微信功能。
+Jeewx是一个开源、高效、敏捷的微信开发平台，采用JAVA语言基于Jeecg快速开发框架实现，Jeewx开源版实现了微信平台的基础功能，便于用户二次开发。
+更多功能请关注官网： www.jeewx.com，购买商业版，jeewx采用插件的方式实现微信功能，不同的插件实现不同的微信功能。
 
 主要特性
 -----------------------------------
@@ -19,7 +19,6 @@ jeewx的目的是最大化的简化微信开发的流程，使用开发者能把
 *   4、支持多用户多公众号管理
 *   5、详细的二次开发文档，并不断更新增加相关开发案例提供学习参考
 *   6、微信功能插件化开发，更易于定制和二次开发
-*   7、提供丰富的微信插件下载安装使用，总有一些是符合或接近你的需求
 
 主要功能
 -----------------------------------
@@ -41,10 +40,11 @@ jeewx的目的是最大化的简化微信开发的流程，使用开发者能把
 *   16，自定义接口回复
 *   17，翻译
 *   18，天气
-    更多功能参考官方：www.jeecg.org
+    
+	更多功能参考官方：www.jeecg.org
 
 
-最低系统需求
+开发环境
 -----------------------------------
 * 	Tomcat6.0 或更高版本。
 * 	MySQL 5.0 或更高版本。
@@ -52,38 +52,31 @@ jeewx的目的是最大化的简化微信开发的流程，使用开发者能把
 
 
 
-- 福利贴 -
+商业版介绍
 -----------------------------------
-* 	资源1： 受Maven折磨的同学来福利了，Eclipse非maven版本下载地址
-* 	JEECG 开发平台(V3系列-NEW)
-* 	JEEWX微信管家系统（V2系列-NEW）
-* 	[下载地址](http://www.jeecg.org/forum.php?mod=viewthread&tid=1229&extra=page%3D1)
-
-
-商业版本介绍
------------------------------------
-*   [商业版本演示地址](http://www.jeewx.com/jeewx)
+*   [商业版演示](http://www.jeewx.com/jeewx)
 *   测试账号：ceshi
-*   测试密码:  123456 
-*   [想获得更多技术支持和更多功能请购买商业版本；](http://mp.weixin.qq.com/s?__biz=MjM5NjA2OTkxMg==&mid=200331077&idx=1&sn=6a55fd8a4a8c36678fb4908343d22dd4#rd)
+*   测试密码: 123456 
+*   [更多技术支持请购买商业版；](http://mp.weixin.qq.com/s?__biz=MjM5NjA2OTkxMg==&mid=200331077&idx=1&sn=6a55fd8a4a8c36678fb4908343d22dd4#rd)
 *   商务QQ：418799587
 
 系统安装
 -----------------------------------
-* 	1、将jeewx压缩包解压并上传到服务器。
+* 	1、将项目导入eclipse中，通过maven下载项目依赖。
 * 	2、首次在浏览器中访问 http://localhost:8080/jeewx/，默认admin登录，一个账号只能配置一个微信公众账号。
-* 	3、按照安技术文档完成安装，如果有问题请访问官网讨论区寻求帮助。
+* 	3、微信域名配置（重要）
+* 	   修改：src/main/resources/sysConfig.properties
+* 	   参数：domain={http://localhost:8080/jeewx/}
 * 	4、服务器配置      
         URL:   http://*地址*/jeewx/wechatController.do?wechat<br>
         Token:  jeecg<br>
-* 	5.云服务平台建议，可以采用MoPaaS
-*       6. [Maven开发环境搭建文档](http://www.jeecg.org/forum.php?mod=viewthread&tid=2080&extra=page%3D2) 
+*   5. [开发环境搭建入门](http://www.jeecg.org/forum.php?mod=viewthread&tid=2080&extra=page%3D2) 
 
 联系方式
 -----------------------------------
-* 	QQ 交流群 : 287090836
-* 	官网:      www.jeewx.com
-* 	官方邮件：  scott@jeecg.org
+* 	QQ 群:  289709451
+* 	官 网:  www.jeewx.com
+* 	邮 箱： jeecg@sina.com
 
 
 ![github](http://img.blog.csdn.net/20140706133652718?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvemhhbmdkYWlzY290dA==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/Center "jeewx")

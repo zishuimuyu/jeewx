@@ -13,6 +13,7 @@
    <t:dgToolBar title="录入" icon="icon-add" url="weixinExpandconfigController.do?goAdd" funname="add"></t:dgToolBar>
    <t:dgToolBar title="编辑" icon="icon-edit" url="weixinExpandconfigController.do?goUpdate" funname="update"></t:dgToolBar>
    <t:dgToolBar title="查看" icon="icon-search" url="weixinExpandconfigController.do?goUpdate" funname="detail"></t:dgToolBar>
+   <t:dgDelOpt title="删除" url="weixinExpandconfigController.do?doDel&id={id}" />
   </t:datagrid>
   </div>
  </div>

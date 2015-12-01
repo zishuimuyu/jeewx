@@ -15,6 +15,7 @@ import net.sf.json.util.PropertyFilter;
 
 import org.jeecgframework.core.common.hibernate.qbc.CriteriaQuery;
 import org.jeecgframework.core.common.model.json.AjaxJson;
+import org.jeecgframework.core.common.model.json.ComboTree;
 import org.jeecgframework.core.common.model.json.DataGrid;
 import org.jeecgframework.core.common.model.json.TreeGrid;
 import org.jeecgframework.core.constant.Globals;
@@ -377,6 +378,32 @@ public class MenuManagerController {
 			j.setMsg(this.message);
 		}
 		return j;
+	}
+	
+	@RequestMapping(params = "treeMenu")
+	@ResponseBody
+	public List<TreeGrid> treeMenu(HttpServletRequest request, ComboTree comboTree) {
+		CriteriaQuery cq = new CriteriaQuery(MenuEntity.class);
+		if (StringUtil.isNotEmpty(comboTree.getId())) {
+			cq.eq("menuEntity.id", comboTree.getId());
+		}
+		if (StringUtil.isEmpty(comboTree.getId())) {
+			cq.isNull("menuEntity.id");
+		}
+		cq.eq("accountId", ResourceUtil.getWeiXinAccountId());
+		cq.add();
+		List<MenuEntity> menuList = weixinMenuService.getListByCriteriaQuery(cq, false);
+		
+		List<TreeGrid> treeGrids = new ArrayList<TreeGrid>();
+		TreeGridModel treeGridModel = new TreeGridModel();
+		treeGridModel.setTextField("name");
+		treeGridModel.setParentText("menuEntity_name");
+		treeGridModel.setParentId("menuEntity_id");
+		treeGridModel.setSrc("url");
+		treeGridModel.setIdField("id");
+		treeGridModel.setChildList("menuList");
+		treeGrids = systemService.treegrid(menuList, treeGridModel);
+		return treeGrids;
 	}
 
 	public String getMessage() {

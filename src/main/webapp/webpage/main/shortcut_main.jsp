@@ -3,7 +3,7 @@
 <!DOCTYPE html >
 <html>
 <head>
-<title>捷微JeeWx：免费开源微信公众账号开发平台</title>
+<title>JeeWx 开源微信管家平台</title>
 <t:base type="jquery,easyui,tools,DatePicker,autocomplete"></t:base>
 <link rel="shortcut icon" href="images/favicon.ico">
 <style type="text/css">
@@ -16,11 +16,9 @@ a:hover {
 	color: black;
 	text-decoration: none;
 }
-/*update-start--Author:zhangguoming  Date:20140622 for：左侧树调整：加大宽度、更换节点图标、修改选中颜色*/
 .tree-node-selected{
     background: #eaf2ff;
 }
-/*update-end--Author:zhangguoming  Date:20140622 for：左侧树调整：加大宽度、更换节点图标、修改选中颜色*/
 </style>
 <SCRIPT type="text/javascript">
 
@@ -201,7 +199,7 @@ a:hover {
 </div>
 <!-- 底部 -->
 <div region="south" border="false" style="height: 25px; overflow: hidden;">
-<div align="center" style="color: #CC99FF; padding-top: 2px">&copy; 版权所有 <span class="tip"><a href="http://www.jeewx.com" title="捷微JeeWx：免费开源微信公众账号开发平台">捷微JeeWx</a> (推荐谷歌浏览器，获得更快响应速度) 技术支持:<a href="http://www.jeecg.org" title="JEECG开源社区">JEECG 开源社区</a> </span></div>
+<div align="center" style="color: #CC99FF; padding-top: 2px">&copy; 版权所有 <span class="tip"><a href="http://www.jeewx.com" title="Jeewx 捷微管家系统" target="_blank">捷微官网</a> (推荐谷歌浏览器，获得更快响应速度) 技术支持: <a href="http://www.jeecg.org" title="Jeecg论坛" target="_blank"> Jeecg论坛</a> </span></div>
 </div>
 <div id="mm" class="easyui-menu" style="width: 150px;">
 <div id="mm-tabupdate">刷新</div>
