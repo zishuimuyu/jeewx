@@ -8,6 +8,7 @@
 	<properties>
         <codegenerate.version>3.4.6</codegenerate.version>
         <minidao.version>1.4.0</minidao.version>
+        <jeewx-api.version>1.1-SNAPSHOT</jeewx-api.version>
 
 		<!-- 主要依赖库的版本定义 -->
 		<spring.version>3.1.1.RELEASE</spring.version>
@@ -130,6 +131,14 @@
             <url>http://maven.jeecg.org/nexus/content/repositories/jeecg</url>
             <snapshots>
 				<enabled>false</enabled>
+			</snapshots>
+        </repository>
+        <repository>
+            <id>jeecg-snapshots</id>
+            <name>jeecg-snapshots Repository</name>
+            <url>http://maven.jeecg.org/nexus/content/repositories/snapshots</url>
+            <snapshots>
+				<enabled>true</enabled>
 			</snapshots>
         </repository>
 	</repositories>
@@ -752,6 +761,18 @@
 		  <groupId>commons-codec</groupId>
 		  <artifactId>commons-codec</artifactId>
 		  <version>1.6</version>
+		</dependency>
+		<!-- jeewx-api -->
+		<dependency>
+		  <groupId>org.jeewx</groupId>
+		  <artifactId>jeewx-api</artifactId>
+		  <version>${jeewx-api.version}</version>
+		  <exclusions>
+		  	<exclusion>
+		  		<groupId>org.freemarker</groupId>
+		  		<artifactId>freemarker</artifactId>
+		  	</exclusion>
+		  </exclusions>
 		</dependency>
 	</dependencies>
 
