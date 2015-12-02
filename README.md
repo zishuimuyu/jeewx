@@ -69,6 +69,7 @@ Jeewx是一个开源、高效、敏捷的微信开发平台，采用JAVA语言�
         URL:   http://*地址*/jeewx/wechatController.do?wechat<br>
         Token:  jeecg<br>
 *   5. [开发环境搭建入门](http://www.jeecg.org/forum.php?mod=viewthread&tid=2080&extra=page%3D2) 
+*   6. Jeewx依赖本地Maven仓库下载 (http://git.oschina.net/jeecg/jeecg-local-maven) 
 
 联系方式
 -----------------------------------

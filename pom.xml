@@ -310,6 +310,16 @@
             <groupId>com.cloudhopper.proxool</groupId>
             <artifactId>proxool</artifactId>
             <version>${proxool.version}</version>
+            <exclusions>
+            	<exclusion>
+            		<artifactId>geronimo-spec-javamail</artifactId>
+            		<groupId>geronimo-spec</groupId>
+            	</exclusion>
+            	<exclusion>
+            		<artifactId>avalon-framework-api</artifactId>
+            		<groupId>avalon-framework</groupId>
+            	</exclusion>
+            </exclusions>
         </dependency>
         <dependency>
             <groupId>com.cloudhopper.proxool</groupId>
