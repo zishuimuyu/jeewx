@@ -30,13 +30,27 @@
 		<property name="jobDetail" ref="taskDemoServiceTaskJob" />
 		<property name="cronExpression" value="0 0/1 * * * ?" />
 	</bean>
+	
+	<!-- 自动重置微信Token -->
+	<bean id="autoResetWeixinTokenJob"
+		class="org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean">
+		<property name="targetObject" ref="weixinAccountTokenTask" />
+		<property name="targetMethod" value="autoResetToken" />
+		<property name="concurrent" value="false" />
+	</bean>
+
+	<bean id="autoResetWeixinTokenCronTrigger" class="org.jeecgframework.core.timer.DataBaseCronTriggerBean">
+		<property name="jobDetail" ref="autoResetWeixinTokenJob" />
+		<property name="cronExpression" value="0 0/1 * * * ?" />
+	</bean>
 
 	<!-- 定时任务调度器 -->
 	<bean id="schedulerFactory" lazy-init="false" autowire="no"
 		class="org.jeecgframework.core.timer.DataBaseSchedulerFactoryBean">
 		<property name="triggers">
 			<list>
-				<ref bean="taskDemoServiceTaskCronTrigger" />
+				 <!-- 重置Token -->
+				 <ref bean="autoResetWeixinTokenCronTrigger" />
 			</list>
 		</property>
 	</bean>

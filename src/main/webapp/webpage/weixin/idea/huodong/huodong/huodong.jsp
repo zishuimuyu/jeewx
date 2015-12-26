@@ -25,6 +25,20 @@
 				<tr>
 					<td align="right">
 						<label class="Validform_label">
+							活动类型:
+						</label>
+					</td>
+					<td class="value">
+					<select id="type" name="type" ignore="ignore">
+						<option value="1" <c:if test="${huodongPage.type==1}">selected="selected"</c:if>>刮刮乐</option>
+						<option value="2" <c:if test="${huodongPage.type==2}">selected="selected"</c:if>>大转盘</option>
+					</select>
+						<span class="Validform_checktip"></span>
+					</td>
+				</tr>
+				<tr>
+					<td align="right">
+						<label class="Validform_label">
 							活动描述:
 						</label>
 					</td>
@@ -152,20 +166,6 @@
 					<td class="value">
 						<input class="inputxt" id="gl" name="gl" ignore="ignore"
 							   value="${huodongPage.gl}">
-						<span class="Validform_checktip"></span>
-					</td>
-				</tr>
-				<tr>
-					<td align="right">
-						<label class="Validform_label">
-							活动类型:
-						</label>
-					</td>
-					<td class="value">
-					<select id="type" name="type" ignore="ignore">
-						<option value="1" >刮刮乐</option>
-						<option value="2">大转盘</option>
-					</select>
 						<span class="Validform_checktip"></span>
 					</td>
 				</tr>

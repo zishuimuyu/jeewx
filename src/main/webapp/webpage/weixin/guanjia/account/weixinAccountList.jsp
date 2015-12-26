@@ -27,6 +27,7 @@
    <t:dgToolBar title="批量删除"  icon="icon-remove" url="weixinAccountController.do?doBatchDel" funname="deleteALLSelect"></t:dgToolBar>
      --%>
    <t:dgToolBar title="查看" icon="icon-search" url="weixinAccountController.do?goUpdate" funname="detail"></t:dgToolBar>
+    <t:dgToolBar title="重置微信Token"  operationCode="doResetAccessToken" icon="icon-reload"  funname="doResetAccessToken"></t:dgToolBar>
   </t:datagrid>
   </div>
  </div>
@@ -43,5 +44,29 @@
 			return;
 		}
 		createwindow(title, addurl,width,height);
+	}
+ 
+ function doResetAccessToken(){
+		var row = $('#weixinAccountList').datagrid('getSelected');
+	    var url = "weixinAccountController.do?doResetAccessToken";
+		  if(row){
+		   		url += "&accountid="+row.id;
+		  }else{
+			  tip("请选择微信公众号!");
+			  return;
+		  }
+		  
+		 $.ajax({
+			url:url,
+			type:"GET",
+			dataType:"JSON",
+			success:function(data){
+				if(data.success){
+					tip("微信公众号重置Token成功!");
+				}else{
+					tip(data.msg);
+				}
+			}
+		});
 	}
  </script>

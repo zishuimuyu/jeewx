@@ -230,7 +230,9 @@ public class MenuManagerController {
 			MenuEntity tempMenu = this.systemService.getEntity(
 					MenuEntity.class, menuEntity.getId());
 		    MenuEntity menuTemp=new MenuEntity();
-		     menuTemp.setId(fatherName);
+		    if(oConvertUtils.isNotEmpty(fatherName)){
+		    	menuTemp.setId(fatherName);
+		    }
 			tempMenu.setMenuEntity(menuTemp);
 			tempMenu.getMenuEntity().getId();
 			this.message = "更新" + tempMenu.getName() + "的菜单信息信息成功！";

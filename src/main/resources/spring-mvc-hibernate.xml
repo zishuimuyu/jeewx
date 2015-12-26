@@ -101,6 +101,7 @@
 				<value>org.jeecgframework.web.test.entity.*</value>
 				<value>org.jeecgframework.web.cgform.entity.*</value>
 				<value>org.jeecgframework.web.cgreport.entity.*</value>
+				<value>org.jeecgframework.web.rest.*</value>
 				<value>weixin.*</value>
 			</list>
 		</property>

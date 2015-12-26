@@ -36,6 +36,19 @@ public class AuthInterceptor implements HandlerInterceptor {
 	private static final Logger logger = Logger.getLogger(AuthInterceptor.class);
 	private SystemService systemService;
 	private List<String> excludeUrls;
+	/**
+	 * 包含匹配（请求链接包含该配置链接，就进行过滤处理）
+	 */
+	private List<String> excludeContainUrls;
+	
+	public List<String> getExcludeContainUrls() {
+		return excludeContainUrls;
+	}
+
+	public void setExcludeContainUrls(List<String> excludeContainUrls) {
+		this.excludeContainUrls = excludeContainUrls;
+	}
+
 	private static List<TSFunction> functionList;
 
 	public List<String> getExcludeUrls() {
@@ -78,6 +91,8 @@ public class AuthInterceptor implements HandlerInterceptor {
 					request.getParameter("sessionId"));
 		}
 		if (excludeUrls.contains(requestPath)) {
+			return true;
+		}else if(moHuContain(excludeContainUrls, requestPath)){
 			return true;
 		} else {
 			if (client != null && client.getUser()!=null ) {
@@ -169,4 +184,18 @@ public class AuthInterceptor implements HandlerInterceptor {
 		request.getRequestDispatcher("webpage/login/timeout.jsp").forward(request, response);
 	}
 
+	/**
+	 * 模糊匹配字符串
+	 * @param list
+	 * @param key
+	 * @return
+	 */
+	private boolean moHuContain(List<String> list,String key){
+		for(String str : list){
+			if(key.contains(str)){
+				return true;
+			}
+		}
+		return false;
+	}
 }

@@ -17,6 +17,7 @@ import org.jeecgframework.core.util.ResourceUtil;
 import org.jeecgframework.core.util.StringUtil;
 import org.jeecgframework.tag.core.easyui.TagUtil;
 import org.jeecgframework.web.system.service.SystemService;
+import org.jeewx.api.core.exception.WexinReqException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -248,5 +249,18 @@ public class WeixinAccountController extends BaseController {
 			req.setAttribute("weixinAccountPage", weixinAccount);
 		}
 		return new ModelAndView("weixin/guanjia/account/weixinAccount-update");
+	}
+	
+	/**
+	 * 重置Token
+	 * @param request
+	 * @param accountid
+	 * @return
+	 * @throws WexinReqException 
+	 */
+	@RequestMapping(params = "doResetAccessToken")
+	@ResponseBody
+	public AjaxJson doResetAccessToken(HttpServletRequest request,String accountid,String relationid) throws Exception{
+		return weixinAccountService.resetAccessToken(accountid);
 	}
 }

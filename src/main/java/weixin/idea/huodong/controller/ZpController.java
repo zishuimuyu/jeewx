@@ -12,6 +12,7 @@ import javax.servlet.http.HttpSession;
 import org.jeecgframework.core.common.model.json.AjaxJson;
 import org.jeecgframework.core.util.ResourceUtil;
 import org.jeecgframework.core.util.StringUtil;
+import org.jeecgframework.core.util.oConvertUtils;
 import org.jeecgframework.web.system.service.SystemService;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -58,15 +59,17 @@ public class ZpController {
 		}
     	if(huodongEntity!=null){
     		String gl = huodongEntity.getGl();
-    		String glArr[] = gl.split("/");
-    		int randomNum = HdUtils.createPrice(Integer.parseInt(glArr[0]),Integer.parseInt(glArr[1]));
-    		//randomNum = 1;
-    		request.setAttribute("prize", randomNum);
-    		HttpSession session  = request.getSession();
-    		session.setAttribute("hdId", huodongEntity.getId());
-    		session.setAttribute("accountid", accountid);
-    		session.setAttribute("opendId", opendId);
-    		session.setAttribute("prize", randomNum);
+    		if(oConvertUtils.isNotEmpty(gl)){
+    			String glArr[] = gl.split("/");
+        		int randomNum = HdUtils.createPrice(Integer.parseInt(glArr[0]),Integer.parseInt(glArr[1]));
+        		//randomNum = 1;
+        		request.setAttribute("prize", randomNum);
+        		HttpSession session  = request.getSession();
+        		session.setAttribute("hdId", huodongEntity.getId());
+        		session.setAttribute("accountid", accountid);
+        		session.setAttribute("opendId", opendId);
+        		session.setAttribute("prize", randomNum);
+    		}
     		request.setAttribute("huodongEntity", huodongEntity);
     	}
     	

@@ -56,6 +56,20 @@ public class ResourceUtil {
 	}
 	
 	/**
+	 * 获取登录用户微信账号信息
+	 * @return
+	 */
+	public static final String getShangJiaAccountId() {
+		HttpSession session = ContextHolderUtils.getSession();
+		if(session.getAttribute(WeiXinConstants.WEIXIN_ACCOUNT)!=null){
+			WeixinAccountEntity weixinAccountEntity = (weixin.guanjia.account.entity.WeixinAccountEntity) session.getAttribute(WeiXinConstants.WEIXIN_ACCOUNT);
+			return weixinAccountEntity.getId();
+		}else{
+			return null;
+		}
+	}
+	
+	/**
 	 * 获取登录用户微信账号ID
 	 * @return
 	 */
@@ -219,6 +233,20 @@ public class ResourceUtil {
     public static String getRandCodeType() {
         return bundle.getString("randCodeType");
     }
+    
+    /**
+	 * 获取商家的账号ID
+	 * 对应着微信公众账号
+	 * @return
+	 */
+	public static final String getOpenid(HttpServletRequest request) {
+		String openid = request.getParameter("openid");
+		if(openid!=null){
+			return openid;
+		}else{
+			return null;
+		}
+	}
 	
 	public static void main(String[] args) {
 		org.jeecgframework.core.util.LogUtil.info(getPorjectPath());

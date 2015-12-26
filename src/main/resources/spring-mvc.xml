@@ -112,8 +112,6 @@
 						<value>loginController.do?pwdInit</value>
 						<value>loginController.do?login</value>
 						<value>loginController.do?checkuser</value>
-						<value>repairController.do?repair</value>
-						<value>repairController.do?deleteAndRepair</value>
 						<value>cmsMenuController.do?index</value>
 					    <value>cmsArticleController.do?cmsArticleListShow</value>
 					    <value>cmsArticleController.do?datagridwx</value>
@@ -133,6 +131,17 @@
 					    <value>newsItemController.do?newscontent</value>
 					    <!-- 保存用户 -->
 					    <value>userController.do?saveUser</value>
+					    <value>weixinLinksucaiController.do?link</value>
+					    <value>zpController.do?goGglNew</value>
+					    <value>zpController.do?doGgl</value>
+					    <value>zpController.do?saveRecord</value>
+					</list>
+				</property>
+				<!-- 模糊匹配 -->
+				<property name="excludeContainUrls">
+					<list>
+						<value>rest/openwx</value>
+						<value>openDataController</value>
 					</list>
 				</property>
 			</bean>

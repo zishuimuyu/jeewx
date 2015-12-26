@@ -3,7 +3,9 @@ package weixin.guanjia.account.service;
 import java.io.Serializable;
 import java.util.List;
 
+import org.jeecgframework.core.common.model.json.AjaxJson;
 import org.jeecgframework.core.common.service.CommonService;
+import org.jeewx.api.core.exception.WexinReqException;
 
 import weixin.guanjia.account.entity.WeixinAccountEntity;
 
@@ -47,4 +49,12 @@ public interface WeixinAccountServiceI extends CommonService{
  	 * @return
  	 */
  	public WeixinAccountEntity findByToUsername(String toUserName);
+ 	/**
+	 * 通过微信原始ID，获取系统微信公众账号配置信息
+	 * @param weixinId
+	 * @return
+	 */
+	public WeixinAccountEntity getWeixinAccountByWeixinOldId(String weixinId);
+	
+	public AjaxJson resetAccessToken(String accountid) throws WexinReqException;
 }

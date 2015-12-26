@@ -1,20 +1,10 @@
-<script type="text/javascript" src="plug-in/jquery/jquery-1.8.3.js"></script>
-<script type="text/javascript" src="plug-in/tools/dataformat.js"></script>
-<link id="easyuiTheme" rel="stylesheet" href="plug-in/easyui/themes/default/easyui.css" type="text/css">
-</link><link rel="stylesheet" href="plug-in/easyui/themes/icon.css" type="text/css"></link>
-<link rel="stylesheet" type="text/css" href="plug-in/accordion/css/accordion.css">
-<script type="text/javascript" src="plug-in/easyui/jquery.easyui.min.1.3.2.js"></script>
-<script type="text/javascript" src="plug-in/easyui/locale/easyui-lang-zh_CN.js"></script>
-<script type="text/javascript" src="plug-in/tools/syUtil.js"></script>
-<script type="text/javascript" src="plug-in/lhgDialog/lhgdialog.min.js"></script>
-<script type="text/javascript" src="plug-in/tools/curdtools.js"></script>
-<script type="text/javascript" src="plug-in/tools/easyuiextend.js"></script>
+${config_iframe}
 <script type="text/javascript">
 $(function(){$('#${config_id}List').datagrid(
 	{
 	idField: 'id',
 	title: '${config_name}',
-	url:'cgReportController.do?datagrid&configId=${config_id}',
+	url:'cgReportController.do?datagrid&configId=${config_id}${config_params}',
 	fit:true,
 	fitColumns:false,
 	pageSize: 10,
@@ -32,7 +22,7 @@ $(function(){$('#${config_id}List').datagrid(
 					 	<#if x_has_next>
 						{field:'${x['field_name']}',
 						 title:'${x['field_txt']}',
-					 	 <#if x['field_href'] != "">
+					 	 <#if x['field_href']?? && x['field_href']!="">
 						 	formatter:function(value,rec,index){
 						 		var href='';
 						 		href+=applyHref('字段链接','${x['field_href']}',value,rec,index);

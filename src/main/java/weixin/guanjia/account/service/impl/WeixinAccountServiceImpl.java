@@ -7,15 +7,21 @@ import java.util.UUID;
 
 import net.sf.json.JSONObject;
 
+import org.jeecgframework.core.common.model.json.AjaxJson;
+import org.jeecgframework.core.common.model.json.LogAnnotation;
 import org.jeecgframework.core.common.service.impl.CommonServiceImpl;
+import org.jeecgframework.core.util.LogUtil;
 import org.jeecgframework.core.util.ResourceUtil;
+import org.jeecgframework.core.util.oConvertUtils;
 import org.jeecgframework.web.system.pojo.base.TSUser;
+import org.jeewx.api.core.exception.WexinReqException;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import weixin.guanjia.account.entity.WeixinAccountEntity;
 import weixin.guanjia.account.service.WeixinAccountServiceI;
 import weixin.guanjia.core.util.WeixinUtil;
+import weixin.p3.oauth2.def.WeiXinOpenConstants;
 
 @Service("weixinAccountService")
 @Transactional
@@ -255,5 +261,113 @@ public class WeixinAccountServiceImpl extends CommonServiceImpl implements
 				String.valueOf(t.getAddtoekntime()));
 		sql = sql.replace("#{UUID}", UUID.randomUUID().toString());
 		return sql;
+	}
+	
+	/**
+	 * 通过微信原始ID，获取系统微信公众账号配置信息
+	 * @param weixinId
+	 * @return
+	 */
+	public WeixinAccountEntity getWeixinAccountByWeixinOldId(String weixinId){
+		if(oConvertUtils.isEmpty(weixinId)){
+			return null;
+		}
+		List<WeixinAccountEntity> weixinAccounts = this.findByProperty(WeixinAccountEntity.class, "weixin_accountid", weixinId);
+		if(weixinAccounts!=null){
+			return weixinAccounts.get(0);
+		}else{
+			return null;
+		}
+	}
+	
+	/**
+	 * 重置 AccessToken
+	 * @return
+	 * @throws WexinReqException 
+	 */
+	@LogAnnotation(operateDescribe="重置Token",operateFuncNm="resetAccessToken",operateModelNm="AjaxJson")
+	public AjaxJson resetAccessToken(String accountid) throws WexinReqException {
+		AjaxJson json = new AjaxJson();
+		String token = "";
+		Date getAccessTokenDate = new Date();
+		WeixinAccountEntity account  = this.get(WeixinAccountEntity.class, accountid);
+		token = account.getAccountaccesstoken();
+		String requestUrl = WeixinUtil.access_token_url.replace("APPID",account.getAccountappid()).replace("APPSECRET",account.getAccountappsecret());
+		JSONObject jsonObject = WeixinUtil.httpRequest(requestUrl, "GET",null);
+		
+		if (null != jsonObject) {
+			if (jsonObject.has("errcode") && jsonObject.getInt("errcode") != 0) {
+				//update-begin----author:scott---------date:20150719-------for:提示信息优化----------------------
+				String errormsg = "很抱歉，系统异常，请联系管理员!";
+				if(jsonObject.containsKey("errcode")){
+					errormsg = errormsg + "　错误码:"+jsonObject.get("errcode");
+				}
+				json.setMsg(errormsg);
+				//update-end----author:scott---------date:20150719-------for:提示信息优化----------------------
+				json.setSuccess(false);
+				return json;
+			}
+			try {
+				token = jsonObject.getString("access_token");
+				// 重置token
+				account.setAccountaccesstoken(token);
+				// 重置事件
+				account.setAddtoekntime(getAccessTokenDate);
+				
+				//--update-begin---author：scott-------date:20151026--------for:重置Token扩展支持Apiticket、jsapi_ticket-------------------------
+				try {
+					//[2].获取api凭证
+//					GetticketRtn getticketRtn = JwQrcodeAPI.doGetticket(token);
+//					if (null != getticketRtn) {
+//						try {
+//							// 重置token
+//							account.setApiticket(getticketRtn.getTicket());
+//							// 重置事件
+//							account.setApiticketttime(getAccessTokenDate);
+//							LogUtil.info("---------定时任务重置超过2小时失效token------------------"+"获取Apiticket成功");
+//						} catch (Exception e) {
+//							// 获取api凭证失败
+//							String wrongMessage = "获取api凭证失败 errcode:{"+ getticketRtn.getErrcode()+"} errmsg:{"+getticketRtn.getErrmsg()+"}";
+//							LogUtil.info(wrongMessage);
+//						}
+//					}
+				} catch (Exception e) {
+					LogUtil.info("---------------------定时任务异常--【获取api凭证】--------------"+e.toString());
+				}
+				//[3].获取jsapi凭证
+				try {
+					String jsapiticket = null;
+					String jsapi_ticket_url = WeiXinOpenConstants.JSAPI_TICKET_URL.replace("ACCESS_TOKEN", token);
+					JSONObject jsapi_ticket_json = WeixinUtil.httpRequest(jsapi_ticket_url, "GET", null);
+					if (null != jsapi_ticket_json) {
+						try {
+							jsapiticket = jsapi_ticket_json.getString("ticket");
+							// 重置token
+							account.setJsapiticket(jsapiticket);
+							// 重置事件
+							account.setJsapitickettime(getAccessTokenDate);
+							LogUtil.info("---------定时任务重置超过2小时失效token------------------"+"获取Jsapiticket成功");
+						} catch (Exception e) {
+							//获取jsapi凭证失败
+							String wrongMessage = "获取jsapi凭证失败 errcode:{"+ (jsonObject.containsKey("errcode")?jsonObject.get("errcode"):"") +"} errmsg:{"+ (jsonObject.containsKey("errmsg")?jsonObject.getString("errmsg"):"") +"}";
+							LogUtil.info(wrongMessage);
+						}
+					}
+				} catch (Exception e) {
+					LogUtil.info("---------------------定时任务异常--【获取jsapi凭证】--------------"+e.toString());
+				}
+				//--update-end---author：scott-------date:20151026--------for:重置Token扩展支持Apiticket、jsapi_ticket-------------------------
+				this.saveOrUpdate(account);
+			} catch (Exception e) {
+				token = null;
+				// 获取token失败
+				String wrongMessage = "获取token失败 errcode:{ "+ jsonObject.getInt("errcode")+" } errmsg:{ "+ jsonObject.getString("errmsg") +" }";
+				json.setMsg(wrongMessage);
+				json.setSuccess(false);
+				return json;
+			}
+		}
+		json.setSuccess(true);
+		return json;
 	}
 }

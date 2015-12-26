@@ -20,6 +20,7 @@ import org.hibernate.annotations.GenericGenerator;
 @Table(name = "weixin_account", schema = "")
 @SuppressWarnings("serial")
 public class WeixinAccountEntity implements java.io.Serializable {
+	
 	/**主键*/
 	private java.lang.String id;
 	/**公众帐号名称*/
@@ -46,6 +47,48 @@ public class WeixinAccountEntity implements java.io.Serializable {
 	private java.util.Date addtoekntime;
 	/**所属系统用户**/
 	private java.lang.String userName;
+	
+	/**微信卡券JS API的临时票据*/
+	private java.lang.String apiticket;
+	/**微信卡券JS API的临时票据的获取时间*/
+	private java.util.Date apiticketttime;
+	/**jsapi调用接口临时凭证*/
+	private java.lang.String jsapiticket;
+	/**jsapi调用接口临时凭证的获取时间*/
+	private java.util.Date jsapitickettime;
+	
+	public java.lang.String getApiticket() {
+		return apiticket;
+	}
+
+	public void setApiticket(java.lang.String apiticket) {
+		this.apiticket = apiticket;
+	}
+
+	public java.util.Date getApiticketttime() {
+		return apiticketttime;
+	}
+
+	public void setApiticketttime(java.util.Date apiticketttime) {
+		this.apiticketttime = apiticketttime;
+	}
+	@Column(name ="jsapiticket",nullable=true,length=1000)
+	public java.lang.String getJsapiticket() {
+		return jsapiticket;
+	}
+
+	public void setJsapiticket(java.lang.String jsapiticket) {
+		this.jsapiticket = jsapiticket;
+	}
+	@Column(name ="jsapitickettime",nullable=true)
+	public java.util.Date getJsapitickettime() {
+		return jsapitickettime;
+	}
+
+	public void setJsapitickettime(java.util.Date jsapitickettime) {
+		this.jsapitickettime = jsapitickettime;
+	}
+	
 	/**
 	 *方法: 取得java.lang.String
 	 *@return: java.lang.String  主键

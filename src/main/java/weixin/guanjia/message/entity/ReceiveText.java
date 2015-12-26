@@ -14,7 +14,7 @@ import org.jeecgframework.core.common.entity.IdEntity;
  *
  */
 @Entity
-@Table(name="receivetext")
+@Table(name="weixin_receivetext")
 public class ReceiveText extends IdEntity {
 	// 开发者微信号
     private String toUserName;
