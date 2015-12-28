@@ -48,10 +48,10 @@
 
 
 系统安装
-	1、将项目导入eclipse中，通过maven下载项目依赖。
+	1、采用myeclipse8.5导入项目启动
 	2、首次在浏览器中访问 http://localhost:8080/jeewx/，默认admin登录，一个账号只能配置一个微信公众账号。
 	3、微信域名配置（重要）
-	        修改：src/main/resources/sysConfig.properties
+	        修改：src/sysConfig.properties
 	        参数：domain={http://localhost:8080/jeewx/}
 	   
 	4、微信服务器配置      
