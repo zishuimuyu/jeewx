@@ -57,22 +57,21 @@ Jeewx是一个开源、高效、敏捷的微信开发平台，采用JAVA语言�
 
 商业版介绍
 -----------------------------------
-*   [商业版演示](http://www.jeewx.com/jeewx)
+*   演示地址：[http://www.jeewx.com/jeewx](http://www.jeewx.com/jeewx)
 *   体验账号：ceshi/123456
-*   [>>更多技术支持请购买商业版](http://mp.weixin.qq.com/s?__biz=MjM5NjA2OTkxMg==&mid=200331077&idx=1&sn=6a55fd8a4a8c36678fb4908343d22dd4#rd)
 *   商务QQ：418799587
 
 系统安装
 -----------------------------------
 * 	1、将项目导入myeclipse8.5。
-* 	2、首次在浏览器中访问 http://localhost:8080/jeewx/，默认admin登录，一个账号只能配置一个微信公众账号。
+* 	2、首次在浏览器中访问：
+*      http://localhost:8080/jeewx/，采用admin默认密码登录，一个账号只能配置一个微信公众账号。
 * 	3、微信域名配置（重要）
 * 	   修改：src/sysConfig.properties
 * 	   参数：domain={http://localhost:8080/jeewx/}
 * 	4、服务器配置      
         URL:   http://*地址*/jeewx/wechatController.do?wechat<br>
         Token:  jeecg<br>
-*   5. [开发环境搭建入门](http://www.jeecg.org/forum.php?mod=viewthread&tid=2080&extra=page%3D2) 
 
 联系方式
 -----------------------------------
