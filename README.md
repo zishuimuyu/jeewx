@@ -57,9 +57,9 @@ Jeewx是一个开源、高效、敏捷的微信开发平台，采用JAVA语言�
 
 商业版介绍
 -----------------------------------
-*   演示地址：[http://www.jeewx.com/jeewx](http://www.jeewx.com/jeewx)
-*   (免费微信运营平台，注册即可免费使用)
-*   商务QQ：418799587
+*   [商业版，注册免费使用](http://www.jeewx.com/jeewx)
+*   [ Jeewx捷微管家配置指南-开源版](http://blog.csdn.net/zhangdaiscott/article/details/50950739)
+*   QQ群：289709451
 
 系统安装
 -----------------------------------
