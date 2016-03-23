@@ -20,7 +20,7 @@
 【开发入门】
       第一步：采用Mysql手工创建数据库jeewx-os 采用UTF-8编码
       第二步：执行捷微数据初始化SQL脚本
-                          脚本位置：doc\db\jeewx-mysql-2.2.sql
+                          脚本位置：doc\db\jeewx-mysql-2.3.sql
      第三步：导入myeclipse8.5，发布项目，启动项目
      第四步：默认项目访问入口
           http://localhost:8080/jeewx/

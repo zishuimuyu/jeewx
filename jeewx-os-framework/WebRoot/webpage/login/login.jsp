@@ -82,7 +82,7 @@ label.iPhoneCheckLabelOn span {
                     </div>
                     <div class="tip">
                         <input class="randCode" name="randCode" type="text" id="randCode" title="" value="" nullmsg="请输入验证码!" />
-                        <div style="float: right; margin-left:-220px; margin-right: 40px;">
+                        <div style="float: right; margin-left:-220px; margin-right: 25px;">
                             <img id="randCodeImage" src="randCodeImage" />
                         </div>
                     </div>
@@ -105,7 +105,7 @@ label.iPhoneCheckLabelOn span {
                     </div>
                      <div>
                         <div style="float: right; margin-left:-220px; margin-right: 40px;">
-                           	 技术支持： <font color="red">捷微管家</font>   &nbsp;&nbsp;&nbsp;  商业版咨询QQ: <font color="red">418799587</font> &nbsp;&nbsp;&nbsp;  官网: <font color="red"><a href="http://www.jeewx.com" target="_blank">www.jeewx.com</a></font> 
+                           	 技术支持： <font color="red">捷微Jeewx</font>   &nbsp;&nbsp;&nbsp;  QQ群: <font color="red">289709451</font> &nbsp;&nbsp;&nbsp;  官网: <font color="red"><a href="http://www.jeewx.com" target="_blank">www.jeewx.com</a></font> 
                         </div>
                     </div>
                 </form>
