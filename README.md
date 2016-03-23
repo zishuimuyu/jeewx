@@ -102,7 +102,7 @@ Jeewx是一个开源、高效、敏捷的微信开发平台，采用JAVA语言�
 * [2].QQ群 ：289709451
 * [3].捷微开发资料 :  [Jeewx视频](http://www.jeecg.org/forum.php?mod=viewthread&tid=2309&extra=page%3D1)  、[Jeewx捷微管家操作文档(开源版)](http://blog.csdn.net/zhangdaiscott/article/details/50950739)
 * [4].技术博客 ：[地址](http://blog.csdn.net/zhangdaiscott)
-* [5].捷微支持 : [捷微商业用户指南](http://wiki.jeecg.org/pages/viewpage.action?pageId=786462) 、[捷微商业注册地址](http://www.jeewx.com/jeewx/)  	    、[捷微H5活动营销平台注册地址](http://h5huodong.com)
+* [5].捷微商业支持 : [捷微商业用户指南](http://wiki.jeecg.org/pages/viewpage.action?pageId=786462) 、[捷微商业注册地址](http://www.jeewx.com/jeewx/)  	    、[捷微H5活动营销平台注册地址](http://h5huodong.com)
 * [6].其他开源支持 ： 
         [Jeewx-api极速SDK](http://git.oschina.net/jeecg/jeewx-api) 、
         [H5活动平台](http://git.oschina.net/jeecg/p3-weixin)
