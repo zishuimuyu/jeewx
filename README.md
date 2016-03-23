@@ -92,6 +92,8 @@ Jeewx是一个开源、高效、敏捷的微信开发平台，采用JAVA语言�
 【捷微演示公众号】 
 
     官方公众号："JEECG"  "H5互动汇"
+![github](http://img.blog.csdn.net/20160323155143399?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQv/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/Center "jeewx")
+![github](http://img.blog.csdn.net/20160323154916164?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQv/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/Center "jeewx")
 
 捷微技术交流
 ==========
