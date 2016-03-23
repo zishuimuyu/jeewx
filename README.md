@@ -12,9 +12,9 @@ Jeewx是一个开源、高效、敏捷的微信开发平台，采用JAVA语言�
 
 主要特性
 -----------------------------------
-* 	1、基于快速开发平台jeecg 3.4.4版本，采用SpringMVC+Hibernate4+UI库+代码生成器+Jquery+Ehcache等主流架构技术
+* 	1、基于快速开发平台jeecg 3.4.4版本，采用SpringMVC+Hibernate4+Easyui+Jquery+Ehcache等主流架构技术
 *   2、支持企业快速开发，完善的用户组织机构，报表，强大的代码生成器快速有效的提高开发效率
-*   3、开源免费，jeewx遵循Apache2开源协议,免费提供使用(jeewx分开源版本和商业版本，开源版可以免费使用，可商业用途，无授权问题)
+*   3、开源免费，jeewx遵循Apache2开源协议(Jeewx提供开源版和商业版，开源版可以免费使用，可商业，无授权问题)
 *   4、支持多用户多公众号管理
 *   5、详细的二次开发文档，并不断更新增加相关开发案例提供学习参考
 *   6、微信功能插件化开发，更易于定制和二次开发
@@ -114,6 +114,5 @@ Jeewx是一个开源、高效、敏捷的微信开发平台，采用JAVA语言�
 ![github](http://img.blog.csdn.net/20160323153104923?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQv/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/Center "jeewx")
 ![github](http://img.blog.csdn.net/20160323153117501?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQv/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/Center "jeewx")
 ![github](http://img.blog.csdn.net/20160323153122251?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQv/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/Center "jeewx")
-
 ![github](http://img.blog.csdn.net/20140706133652718?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvemhhbmdkYWlzY290dA==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/Center "jeewx")
 ![github](http://img.blog.csdn.net/20140706133543390?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvemhhbmdkYWlzY290dA==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/Center "jeewx")
