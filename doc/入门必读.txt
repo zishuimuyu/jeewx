@@ -1,6 +1,6 @@
 
 1. 标准开发环境
-   myeclipse8.5 + jdk7 + tomcat6 + mysql
+   myeclipse8.5 + jdk7 + tomcat6 + mysql5.0.37
 
 2. 必须手工执行SQL脚本,创建UTF-8编码数据库jeewx-os
         脚本：doc\db\jeewx-mysql-2.2.sql
