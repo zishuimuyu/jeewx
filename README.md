@@ -2,7 +2,7 @@ JeeWx, 微信管家平台，简称“捷微”.
 ===============
 捷微是一款免费开源的JAVA微信公众账号开发平台.
 ===============
-当前最新版本： 3.6.2（发布日期：20160315）
+当前最新版本： 2.3（发布日期：20160323）
 
 ![github](http://img.blog.csdn.net/20140706133601296?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvemhhbmdkYWlzY290dA==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/Center "jeewx")
 <br>平台介绍：
