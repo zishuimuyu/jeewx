@@ -93,20 +93,21 @@ Jeewx是一个开源、高效、敏捷的微信开发平台，采用JAVA语言�
 
     官方公众号："JEECG"  "H5互动汇"
 
-【捷微技术交流】 
+捷微技术交流
+==========
 
-    [1].技术论坛: [www.jeecg.org](http://www.jeecg.org)
-	[2].QQ群：289709451
-	[3].捷微开发资料：
+* [1].技术论坛: [www.jeecg.org](http://www.jeecg.org)
+* [2].QQ群：289709451
+* [3].捷微开发资料：
 	       Jeewx视频:   http://www.jeecg.org/forum.php?mod=viewthread&tid=2309&extra=page%3D1
 	       Jeewx捷微管家操作文档(开源版):  http://blog.csdn.net/zhangdaiscott/article/details/50950739
-	[4].技术博客：
+* [4].技术博客：
 	        http://blog.csdn.net/zhangdaiscott
-	[5].捷微支持
+* [5].捷微支持
 	                   捷微商业用户指南：http://wiki.jeecg.org/pages/viewpage.action?pageId=786462
 	                   捷微商业注册地址：http://www.jeewx.com/jeewx/
 	                   捷微H5活动营销平台注册地址：http://h5huodong.com/（免费注册，创建活动，类似易企秀，专注互动活动开发）
-    [6].其他开源支持
+* [6].其他开源支持
         Jeewx-api极速SDK:   http://git.oschina.net/jeecg/jeewx-api
         H5活动平台:   http://git.oschina.net/jeecg/p3-weixin
 
