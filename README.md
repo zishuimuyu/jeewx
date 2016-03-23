@@ -95,7 +95,7 @@ Jeewx是一个开源、高效、敏捷的微信开发平台，采用JAVA语言�
 
 【捷微技术交流】 
 
-    [1].技术论坛: www.jeecg.org
+    [1].技术论坛: [www.jeecg.org](http://www.jeecg.org)
 	[2].QQ群：289709451
 	[3].捷微开发资料：
 	       Jeewx视频:   http://www.jeecg.org/forum.php?mod=viewthread&tid=2309&extra=page%3D1
