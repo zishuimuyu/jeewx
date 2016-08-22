@@ -46,8 +46,8 @@ Jeewx是一个开源、高效、敏捷的微信开发平台，采用JAVA语言�
 *   22, 微信插件机制
 *   23, 用户消息
 *   24, 微信第三方平台（全网发布）
-    
-	更多功能参考官方：www.jeecg.org
+*   25, 支持微信企业号(微信企业号管理平台)
+
 
 
 开发环境
@@ -60,9 +60,9 @@ Jeewx是一个开源、高效、敏捷的微信开发平台，采用JAVA语言�
 
 商业版介绍
 -----------------------------------
-*   [在线演示](http://www.jeewx.com/jeewx)
-*   体验账号：ceshi/123456
-*   [官方网站](http://www.jeewx.com)
+*   在线演示: [http://www.jeewx.com/jeewx](http://www.jeewx.com/jeewx)
+*   体验账号：ceshi/123456 (可注册)
+*   JEEWX官网：[www.jeewx.com](http://www.jeewx.com)
 
 标准开发环境
 -----------------------------------
