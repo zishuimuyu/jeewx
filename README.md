@@ -88,11 +88,26 @@ JEEWX企业号平台（独立插件模块）
 * 	官 网:  www.jeewx.com
 * 	邮 箱： jeecg@sina.com
 
+
+技术文档
+-----------------------------------
+* [JEEWX 系统操作手册](http://blog.csdn.net/zhangdaiscott/article/details/50950739)
+* [JEEWX 开发环境搭建入门](http://blog.csdn.net/zhangdaiscott/article/details/50915206)
+* [JEEWX 开发入门视频](http://www.jeecg.org/forum.php?mod=viewthread&tid=2309&extra=page%3D1)
+* [JEEWX 入门常见问题](http://www.jeecg.org/forum.php?mod=viewthread&tid=1830&extra=page%3D1)
+* JEECG 应用插件下载中心：[http://yun.jeecg.org](http://yun.jeecg.org)
+
 商业版介绍
 -----------------------------------
 *   在线演示: [http://www.jeewx.com/jeewx](http://www.jeewx.com/jeewx)
 *   体验账号：ceshi/123456 (可注册)
 *   JEEWX官网：[www.jeewx.com](http://www.jeewx.com)
+
+【体验公众号】 
+
+    官方公众号："JEECG"  "H5互动汇"
+![github](http://img.blog.csdn.net/20160323155143399?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQv/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/Center "jeewx")
+![github](http://img.blog.csdn.net/20160323154916164?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQv/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/Center "jeewx")
 
 
 ![github](http://img.blog.csdn.net/20160822173828381?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQv/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/Center "jeewx")
