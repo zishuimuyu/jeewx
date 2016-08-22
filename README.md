@@ -67,12 +67,6 @@ JEEWX企业号平台（独立插件模块）
 -----------------------------------
   eclipse + maven + jdk7 + tomcat6 + mysql_5.0.37 （注意： 不支持jdk8;）
 
-商业版介绍
------------------------------------
-*   在线演示: [http://www.jeewx.com/jeewx](http://www.jeewx.com/jeewx)
-*   体验账号：ceshi/123456 (可注册)
-*   JEEWX官网：[www.jeewx.com](http://www.jeewx.com)
-
 系统安装
 -----------------------------------
 * 	1、将项目采用maven方式导入eclipse中，通过maven下载项目依赖。
@@ -93,6 +87,13 @@ JEEWX企业号平台（独立插件模块）
 * 	QQ 群:  群④289709451、①287090836（满）、③175449166（满）、②129190229（满）
 * 	官 网:  www.jeewx.com
 * 	邮 箱： jeecg@sina.com
+
+商业版介绍
+-----------------------------------
+*   在线演示: [http://www.jeewx.com/jeewx](http://www.jeewx.com/jeewx)
+*   体验账号：ceshi/123456 (可注册)
+*   JEEWX官网：[www.jeewx.com](http://www.jeewx.com)
+
 
 ![github](http://img.blog.csdn.net/20160822173828381?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQv/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/Center "jeewx")
 ![github](http://img.blog.csdn.net/20160822173833177?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQv/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/Center "jeewx")
