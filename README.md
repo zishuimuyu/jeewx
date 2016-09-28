@@ -69,6 +69,7 @@ Jeewx是一个开源、免费的微信管家系统，采用JAVA语言基于Jeecg
 四、开发环境
 -----------------------------------
   eclipse + maven + jdk7 + tomcat6 + mysql_5.0.37 （注意：不支持jdk8）
+  如果不熟悉maven可以下载非maven版本: [更多版本下载地址](http://www.jeecg.org/forum.php?mod=viewthread&tid=1229&page=1&extra=#pid3642)
 
 五、系统安装
 -----------------------------------
