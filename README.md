@@ -116,7 +116,16 @@ Jeewx是一款开源、免费的微信管家系统（多触点管理平台）。
 * [JEEWX 开发入门视频](http://www.jeecg.org/forum.php?mod=viewthread&tid=2309&extra=page%3D1)
 * [JEEWX 入门常见问题](http://www.jeecg.org/forum.php?mod=viewthread&tid=1830&extra=page%3D1)
 
-八、在线体验
+
+八、专题博客
+-----------------------------------
+* [JEEWX与微信企业号对接，激活应用回调模式](http://blog.csdn.net/zhangdaiscott/article/details/51898858)
+* [JEEWX平台与服务窗接口对接](http://blog.csdn.net/zhangdaiscott/article/details/51859085)
+* [JEEWX支付宝服务窗激活开发者模式](http://blog.csdn.net/zhangdaiscott/article/details/51858747)
+* [微信公众账号第三方平台全网发布](http://blog.csdn.net/zhangdaiscott/article/details/48269837)
+
+
+九、在线体验
 -----------------------------------
 *   在线演示: [http://www.jeewx.com/jeewx](http://www.jeewx.com/jeewx)
 *   体验账号：ceshi/123456 (可注册)
@@ -126,7 +135,7 @@ Jeewx是一款开源、免费的微信管家系统（多触点管理平台）。
 ![github](http://img.blog.csdn.net/20160323154916164?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQv/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/Center "jeewx")
 
 
-系统截图 
+十、系统截图 
 -----------------------------------
 ![github](http://img.blog.csdn.net/20160908175834009?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQv/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/Center "jeewx")
 ![github](http://img.blog.csdn.net/20160822173828381?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQv/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/Center "jeewx")
