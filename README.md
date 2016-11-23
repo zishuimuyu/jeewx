@@ -62,6 +62,7 @@ Jeewx是一个开源、免费的微信管家系统（多触点管理系统）。
 *   7，用户管理
 *   8，关键字管理
 *   9，关注回复管理
+
    源码地址：http://git.oschina.net/jeecg/jeecg-p3
 	
 【支付宝服务窗】
@@ -73,7 +74,9 @@ Jeewx是一个开源、免费的微信管家系统（多触点管理系统）。
 *   6，菜单管理
 *   7，用户管理
 *   8，用户消息
-    源码地址：[http://git.oschina.net/jeecg/jw-alipay](http://git.oschina.net/jeecg/jw-alipay)	
+
+    源码地址：[http://git.oschina.net/jeecg/jw-alipay](http://git.oschina.net/jeecg/jw-alipay)
+	
 	技术文档：[http://blog.csdn.net/zhangdaiscott/article/details/53156710](http://blog.csdn.net/zhangdaiscott/article/details/53156710)
 
 四、开发环境
