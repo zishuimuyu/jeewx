@@ -10,7 +10,7 @@ Target Server Type    : MYSQL
 Target Server Version : 50037
 File Encoding         : 65001
 
-Date: 2016-12-17 11:20:46
+Date: 2016-12-20 23:11:18
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -41,7 +41,7 @@ CREATE TABLE `alipay_account` (
 -- ----------------------------
 -- Records of alipay_account
 -- ----------------------------
-INSERT INTO `alipay_account` VALUES ('402880a94742e24e014742e8942b0002', 'jeecg服务窗', '2015112500868971', 'MIICdwIBADANBgkqhkiG9w0BAQEFAASCAmEwggJdAgEAAoGBANFFKe6UZowQ2D64vAw1qh0BBNdOGCgjpP9D5vvH6QtlzqNdEodkphYJoZZCkzOVZrDeiBJDB0e9dACbBZ7MnZr0LikB27XN4sGB5m0alPYLjz6xJ+cE1JZU5pE/kcN1nFMXsSJrLYXFHcXTOO8NZfJzEV++wb7huCBWLIvfCAdTAgMBAAECgYBVq1fAKJZWbqrn+l5ZLTrnxrwBnCG9hOIN8fFET5FyrgnKzNZCAQ0Q5n508eoq6tVwQJk5yKDZWJB9kvjZCnDV+XSHwxdFNJJ0z46tESFlvF2boEPEqy2QwyHmW7B6ME7tGuHq+SwMKahoqbzpIR0H5ESUT2vPekpRaGbunU3hkQJBAPiV4wMrms42IBgfZAbX5h+4XaZJSJ+5JhEK+hxah9F8OtYYBDQHzVEtS+cGdxTcWYOS8W5mshRVAOU43RyYhgkCQQDXgxQpPCiqDGYoZELa8My6tt20OasWEbwnoGDM319IPsSfibzjFTgnto3Et35kb5h79LT7NkbEuZ+GZhvvktl7AkBbmTeGUon/lFgtK1v7XZDRfWkcvgJBwMKzIv1Yd092tLUlcMITvhA86lj+rxYwHKXrYrkN+k+CSHRFArgPMnCpAkEApUqitvGuGqaB3+7uG/BehcJljqpAXx/hGN93/wo/kTCbK+W/mseWl1b7quo1paC16jSIbrh1VMMt6C3+tSQDawJBAJ3XNYVotFVafekhVGdkaCOZ23uap8rxZ2PztuY7Rp5fHkx3/hot8V4jSeJABb2bgbHFP7+QmYKYMapDXWURbm4=', 'MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDDI6d306Q8fIfCOaTXyiUeJHkrIvYISRcc73s3vF1ZT7XN8RNPwJxo8pWaJMmvyTn9N4HQ632qJBVHf8sxHi/fEsraprwCtzvzQETrNRwVxLO5jVmRGi60j8Ue1efIlzPXV9je9mkjzOmdssymZkh2QhUrCmZYI/FCEa3/cNMW0QIDAQAB', '1', null, null, null, null, null, null, null, 'MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDRRSnulGaMENg+uLwMNaodAQTXThgoI6T/Q+b7x+kLZc6jXRKHZKYWCaGWQpMzlWaw3ogSQwdHvXQAmwWezJ2a9C4pAdu1zeLBgeZtGpT2C48+sSfnBNSWVOaRP5HDdZxTF7Eiay2FxR3F0zjvDWXycxFfvsG+4bggViyL3wgHUwIDAQAB');
+INSERT INTO `alipay_account` VALUES ('402880a94742e24e014742e8942b0002', 'jeewx支付窗', '2015121500981210', '?', '?', '1', null, null, null, null, null, null, null, '?');
 
 -- ----------------------------
 -- Table structure for alipay_autoresponse
@@ -67,6 +67,7 @@ CREATE TABLE `alipay_autoresponse` (
 -- ----------------------------
 -- Records of alipay_autoresponse
 -- ----------------------------
+INSERT INTO `alipay_autoresponse` VALUES ('15314E56DCEF4D4BB2583B52E3B3C22F', '你好', 'F65B42281D1E46E69FBEAEEC43587F6D', 'text', 'nihao', '402880a94742e24e014742e8942b0002', null, null, '2016-12-20 16:24:29', null, null, null);
 INSERT INTO `alipay_autoresponse` VALUES ('4E08CEFC43A94084A4E5146420E4CDBC', 'nihao', 'F65B42281D1E46E69FBEAEEC43587F6D', 'text', 'nihao', '402880a94742e24e014742e8942b0002', null, null, '2016-07-07 12:05:46', null, null, null);
 INSERT INTO `alipay_autoresponse` VALUES ('B1488D84B451472980425E65E1A9D2D1', 'jeecg', '7A1B95B8B5144E3B8D97BDB29C973538', 'news', 'JEECG支付宝图文', '402880a94742e24e014742e8942b0002', null, null, '2016-06-29 23:08:26', null, null, null);
 
@@ -152,79 +153,24 @@ CREATE TABLE `alipay_gzuserinfo` (
 -- ----------------------------
 -- Records of alipay_gzuserinfo
 -- ----------------------------
-INSERT INTO `alipay_gzuserinfo` VALUES ('0062BA7F4F9E4728B810107196856351', '20880083282348178390228702419424', null, null, null, null, null, null, null, null, null, '1', null, '402880a94742e24e014742e8942b0002', null, null, '2016-12-16 23:22:10', null, null, null);
-INSERT INTO `alipay_gzuserinfo` VALUES ('02EB438E732144AA8A528EAE32751090', '20880026913500121375211010919409', null, null, null, null, null, null, null, null, null, '1', null, '402880a94742e24e014742e8942b0002', null, null, '2016-12-16 23:22:10', null, null, null);
-INSERT INTO `alipay_gzuserinfo` VALUES ('0594368AF22D4C53ACBB9E064165F68A', '20880059502534436976533540719439', null, null, null, null, null, null, null, null, null, '1', null, '402880a94742e24e014742e8942b0002', null, null, '2016-12-16 23:22:11', null, null, null);
-INSERT INTO `alipay_gzuserinfo` VALUES ('0AB7F385F4304FD0AE197F56267AB1C1', '20880047205162306233349853019462', null, null, null, null, null, null, null, null, null, '1', null, '402880a94742e24e014742e8942b0002', null, null, '2016-12-16 23:22:11', null, null, null);
-INSERT INTO `alipay_gzuserinfo` VALUES ('0C369D78CFA84B8EA1A7D76B859E284E', '20880054849663243767035031619448', null, null, null, null, null, null, null, null, null, '1', null, '402880a94742e24e014742e8942b0002', null, null, '2016-12-16 23:22:11', null, null, null);
-INSERT INTO `alipay_gzuserinfo` VALUES ('0D52AD8C78B44DE0AB0FA450E7626FD4', '20880084793967419800732640419436', null, null, null, null, null, null, null, null, null, '1', null, '402880a94742e24e014742e8942b0002', null, null, '2016-12-16 23:22:11', null, null, null);
-INSERT INTO `alipay_gzuserinfo` VALUES ('0E969805B5EC4EF2B5E5019093F5B0B6', '20880052636959380195716912319487', null, null, null, null, null, null, null, null, null, '1', null, '402880a94742e24e014742e8942b0002', null, null, '2016-12-16 23:22:10', null, null, null);
-INSERT INTO `alipay_gzuserinfo` VALUES ('13A2C910A840423E85B131269D3A9092', '20880062477199306806543630119465', null, null, null, null, null, null, null, null, null, '1', null, '402880a94742e24e014742e8942b0002', null, null, '2016-12-16 23:22:11', null, null, null);
-INSERT INTO `alipay_gzuserinfo` VALUES ('152158BA61C9430DB3330D2B96505E46', '20881027515490124996426432019484', null, null, null, null, null, null, null, null, null, '1', null, '402880a94742e24e014742e8942b0002', null, null, '2016-12-16 23:22:10', null, null, null);
-INSERT INTO `alipay_gzuserinfo` VALUES ('184E4E57576E4FD092E40188F0F93A86', '20880025747021064200049761219444', null, null, null, null, null, null, null, null, null, '1', null, '402880a94742e24e014742e8942b0002', null, null, '2016-12-16 23:22:11', null, null, null);
-INSERT INTO `alipay_gzuserinfo` VALUES ('1B06946EB7A44A48A3EE73FAAD45B67B', '20880074692256479479899530319403', null, null, null, null, null, null, null, null, null, '1', null, '402880a94742e24e014742e8942b0002', null, null, '2016-12-16 23:22:10', null, null, null);
-INSERT INTO `alipay_gzuserinfo` VALUES ('1D46A87299944D47A82DBCBF182ADB77', '20880062477202266082203810119401', null, null, null, null, null, null, null, null, null, '1', null, '402880a94742e24e014742e8942b0002', null, null, '2016-12-16 23:22:10', null, null, null);
-INSERT INTO `alipay_gzuserinfo` VALUES ('2254FAFADB264B56B80C503EC9E59098', '20880059502516071744523380719439', null, null, null, null, null, null, null, null, null, '1', null, '402880a94742e24e014742e8942b0002', null, null, '2016-12-16 23:22:10', null, null, null);
-INSERT INTO `alipay_gzuserinfo` VALUES ('23F34F89072249DE84AD836CFD4925AC', '20880052636947387835624882319455', null, null, null, null, null, null, null, null, null, '1', null, '402880a94742e24e014742e8942b0002', null, null, '2016-12-16 23:22:10', null, null, null);
-INSERT INTO `alipay_gzuserinfo` VALUES ('2485027012EC4D78A2D05C3771F84ADE', '20880054849663246851535201619480', null, null, null, null, null, null, null, null, null, '1', null, '402880a94742e24e014742e8942b0002', null, null, '2016-12-16 23:22:10', null, null, null);
-INSERT INTO `alipay_gzuserinfo` VALUES ('2B73D71E085349F082EBBCC1E76D847E', '20881031842090307540092710019400', null, null, null, null, null, null, null, null, null, '1', null, '402880a94742e24e014742e8942b0002', null, null, '2016-12-16 23:22:11', null, null, null);
-INSERT INTO `alipay_gzuserinfo` VALUES ('2EFFCA87B77C41BBBF9A2F978CE427BE', '20880054849663961213271481619448', null, null, null, null, null, null, null, null, null, '1', null, '402880a94742e24e014742e8942b0002', null, null, '2016-12-16 23:22:11', null, null, null);
-INSERT INTO `alipay_gzuserinfo` VALUES ('38B6998C11944AB09F891930823E6C45', '20881020743942796327077471819418', null, null, null, null, null, null, null, null, null, '1', null, '402880a94742e24e014742e8942b0002', null, null, '2016-12-16 23:22:11', null, null, null);
-INSERT INTO `alipay_gzuserinfo` VALUES ('3B424BF87BB94231B7268E0978FC651A', '20880083002078813612815872819492', null, null, null, null, null, null, null, null, null, '1', null, '402880a94742e24e014742e8942b0002', null, null, '2016-12-16 23:22:11', null, null, null);
-INSERT INTO `alipay_gzuserinfo` VALUES ('426514C3F5F44055B755A83117481654', '20881038786934581983511002219422', null, null, null, null, null, null, null, null, null, '1', null, '402880a94742e24e014742e8942b0002', null, null, '2016-12-16 23:22:11', null, null, null);
-INSERT INTO `alipay_gzuserinfo` VALUES ('4693DE7B7A15474D996FCDA2503BB0E0', '20880041016367647343654780619438', null, null, null, null, null, null, null, null, null, '1', null, '402880a94742e24e014742e8942b0002', null, null, '2016-12-16 23:22:10', null, null, null);
-INSERT INTO `alipay_gzuserinfo` VALUES ('4761C59838DD4C55BD15709E2662729A', '20880059502519890875270320719439', null, null, null, null, null, null, null, null, null, '1', null, '402880a94742e24e014742e8942b0002', null, null, '2016-12-16 23:22:10', null, null, null);
-INSERT INTO `alipay_gzuserinfo` VALUES ('4847EBEFD26D484C900088A618F35F91', '20880074330493508920562121419446', null, null, null, null, null, null, null, null, null, '1', null, '402880a94742e24e014742e8942b0002', null, null, '2016-12-16 23:22:10', null, null, null);
-INSERT INTO `alipay_gzuserinfo` VALUES ('4973898C6A26454293C97BC5D4239D8C', '20880054197236932551732402619458', null, null, null, null, null, null, null, null, null, '1', null, '402880a94742e24e014742e8942b0002', null, null, '2016-12-16 23:22:11', null, null, null);
-INSERT INTO `alipay_gzuserinfo` VALUES ('4A2DEB953FE5471C83799B3D554E9546', '20881044007112299181451052119485', null, null, null, null, null, null, null, null, null, '1', null, '402880a94742e24e014742e8942b0002', null, null, '2016-12-16 23:22:11', null, null, null);
-INSERT INTO `alipay_gzuserinfo` VALUES ('4C7F45C585FB4A0DB8BA2046CCECFFF1', '20880062477216840608448310119497', null, null, null, null, null, null, null, null, null, '1', null, '402880a94742e24e014742e8942b0002', null, null, '2016-12-16 23:22:11', null, null, null);
-INSERT INTO `alipay_gzuserinfo` VALUES ('512DF6C3C8014CDDA93E5FC5F5602CE1', '20880040901490769980536940819472', null, null, null, null, null, null, null, null, null, '1', null, '402880a94742e24e014742e8942b0002', null, null, '2016-12-16 23:22:10', null, null, null);
-INSERT INTO `alipay_gzuserinfo` VALUES ('569A809E91F94D0FB87D75A78EC6B2A0', '20881027515497400180177672019484', null, null, null, null, null, null, null, null, null, '1', null, '402880a94742e24e014742e8942b0002', null, null, '2016-12-16 23:22:10', null, null, null);
-INSERT INTO `alipay_gzuserinfo` VALUES ('58643CEC438C436E8443FF5507625817', '20880062477203628004222640119401', null, null, null, null, null, null, null, null, null, '1', null, '402880a94742e24e014742e8942b0002', null, null, '2016-12-16 23:22:11', null, null, null);
-INSERT INTO `alipay_gzuserinfo` VALUES ('59A1D54FCD9F4CC39FCE31519AE35E15', '20881011548320631401996560519405', null, null, null, null, null, null, null, null, null, '1', null, '402880a94742e24e014742e8942b0002', null, null, '2016-12-16 23:22:11', null, null, null);
-INSERT INTO `alipay_gzuserinfo` VALUES ('5B2EE0BBB76643BE99FDBC6D962BB349', '20881011548303297569814020519469', null, null, null, null, null, null, null, null, null, '1', null, '402880a94742e24e014742e8942b0002', null, null, '2016-12-16 23:22:11', null, null, null);
-INSERT INTO `alipay_gzuserinfo` VALUES ('5DEDAFAA946B44B09C532B680EB9E5F6', '20880083002081503471883292819492', null, null, null, null, null, null, null, null, null, '1', null, '402880a94742e24e014742e8942b0002', null, null, '2016-12-16 23:22:10', null, null, null);
-INSERT INTO `alipay_gzuserinfo` VALUES ('66BD8233D1CA4095886890E6E0D77DDE', '20881068403854827676578452519489', null, null, null, null, null, null, null, null, null, '1', null, '402880a94742e24e014742e8942b0002', null, null, '2016-12-16 23:22:10', null, null, null);
-INSERT INTO `alipay_gzuserinfo` VALUES ('6998A911FAE0470AB4256F0F76E39CE9', '20881020743958041362744741819450', null, null, null, null, null, null, null, null, null, '1', null, '402880a94742e24e014742e8942b0002', null, null, '2016-12-16 23:22:11', null, null, null);
-INSERT INTO `alipay_gzuserinfo` VALUES ('6DB60934C3AC44A69DBF6DEBCF297C79', '20880052636943835523073742319423', null, null, null, null, null, null, null, null, null, '1', null, '402880a94742e24e014742e8942b0002', null, null, '2016-12-16 23:22:11', null, null, null);
-INSERT INTO `alipay_gzuserinfo` VALUES ('72414DF33DD54DD9B9BCB5C0328AC9CE', '20880006335171544979993781719481', null, null, null, null, null, null, null, null, null, '1', null, '402880a94742e24e014742e8942b0002', null, null, '2016-12-16 23:22:10', null, null, null);
-INSERT INTO `alipay_gzuserinfo` VALUES ('74B5D2FEBEA9472587631D2F0B920A53', '20880062477202265991391420119401', null, null, null, null, null, null, null, null, null, '1', null, '402880a94742e24e014742e8942b0002', null, null, '2016-12-16 23:22:10', null, null, null);
-INSERT INTO `alipay_gzuserinfo` VALUES ('7D02043F3B9F4105B5DD41FAE5B04903', '20880052636959383024341872319487', null, null, null, null, null, null, null, null, null, '1', null, '402880a94742e24e014742e8942b0002', null, null, '2016-12-16 23:22:11', null, null, null);
-INSERT INTO `alipay_gzuserinfo` VALUES ('7FAB033BA1084C9782C461FD03826A78', '20880017519787316097175693119463', null, null, null, null, null, null, null, null, null, '1', null, '402880a94742e24e014742e8942b0002', null, null, '2016-12-16 23:22:11', null, null, null);
-INSERT INTO `alipay_gzuserinfo` VALUES ('87D31AE7059F41FC830B039DDF4CD461', '20881038786941088954567292219454', null, null, null, null, null, null, null, null, null, '1', null, '402880a94742e24e014742e8942b0002', null, null, '2016-12-16 23:22:10', null, null, null);
-INSERT INTO `alipay_gzuserinfo` VALUES ('8B548F4911CF48D9AB4F1102E9C53846', '20881038786924827956767112219454', null, null, null, null, null, null, null, null, null, '1', null, '402880a94742e24e014742e8942b0002', null, null, '2016-12-16 23:22:11', null, null, null);
-INSERT INTO `alipay_gzuserinfo` VALUES ('8E5B1D06647C4C7CB3804AE76A696B5C', '20881020743937136086380621819482', null, null, null, null, null, null, null, null, null, '1', null, '402880a94742e24e014742e8942b0002', null, null, '2016-12-16 23:22:11', null, null, null);
-INSERT INTO `alipay_gzuserinfo` VALUES ('9C7EF036D2434B49AC20F69333BBE0BF', '20880020502877438746286741019442', null, null, null, null, null, null, null, null, null, '1', null, '402880a94742e24e014742e8942b0002', null, null, '2016-12-16 23:22:11', null, null, null);
-INSERT INTO `alipay_gzuserinfo` VALUES ('9F8687E32DA142528168E14B0D3181C4', '20881062565091289889133882719459', null, null, null, null, null, null, null, null, null, '1', null, '402880a94742e24e014742e8942b0002', null, null, '2016-12-16 23:22:11', null, null, null);
-INSERT INTO `alipay_gzuserinfo` VALUES ('A1619C8958BC4FA08F1E1935CA378025', '20880006335179044117026911719481', null, null, null, null, null, null, null, null, null, '1', null, '402880a94742e24e014742e8942b0002', null, null, '2016-12-16 23:22:11', null, null, null);
-INSERT INTO `alipay_gzuserinfo` VALUES ('A21482E08F454CFE99EAF56097BC61DE', '20880041016369766682577130619438', null, null, null, null, null, null, null, null, null, '1', null, '402880a94742e24e014742e8942b0002', null, null, '2016-12-16 23:22:10', null, null, null);
-INSERT INTO `alipay_gzuserinfo` VALUES ('A2B98FBA3A9D4AEC88A5EFCECA817EC3', '20880017519793003480733523119431', null, null, null, null, null, null, null, null, null, '1', null, '402880a94742e24e014742e8942b0002', null, null, '2016-12-16 23:22:11', null, null, null);
-INSERT INTO `alipay_gzuserinfo` VALUES ('A587C9204805463E9625465D4A11E603', '20880059502516069216943160719439', null, null, null, null, null, null, null, null, null, '1', null, '402880a94742e24e014742e8942b0002', null, null, '2016-12-16 23:22:11', null, null, null);
-INSERT INTO `alipay_gzuserinfo` VALUES ('A6C55A1F12514964A34FB1D67F212533', '20881027515497671080092612019452', null, null, null, null, null, null, null, null, null, '1', null, '402880a94742e24e014742e8942b0002', null, null, '2016-12-16 23:22:10', null, null, null);
-INSERT INTO `alipay_gzuserinfo` VALUES ('A86D2C9AAB494890B738CB9B9BF85111', '20881062075112161417096702919493', null, null, null, null, null, null, null, null, null, '1', null, '402880a94742e24e014742e8942b0002', null, null, '2016-12-16 23:22:11', null, null, null);
-INSERT INTO `alipay_gzuserinfo` VALUES ('AE0ED149E8CE4ADC8D417CADBE073532', '20880084793966954239940630419436', null, null, null, null, null, null, null, null, null, '1', null, '402880a94742e24e014742e8942b0002', null, null, '2016-12-16 23:22:10', null, null, null);
-INSERT INTO `alipay_gzuserinfo` VALUES ('B5AA474430F0439C8FA8C7E2873CA989', '20880074692262166946381440319403', null, null, null, null, null, null, null, null, null, '1', null, '402880a94742e24e014742e8942b0002', null, null, '2016-12-16 23:22:11', null, null, null);
-INSERT INTO `alipay_gzuserinfo` VALUES ('B7E0D24655234A77AECFD8ED37474235', '20880067042780672225945341519415', null, null, null, null, null, null, null, null, null, '1', null, '402880a94742e24e014742e8942b0002', null, null, '2016-12-16 23:22:10', null, null, null);
-INSERT INTO `alipay_gzuserinfo` VALUES ('BB54F03F35AE4F92A3E1631F5F390C78', '20881020743941237227044121819482', null, null, null, null, null, null, null, null, null, '1', null, '402880a94742e24e014742e8942b0002', null, null, '2016-12-16 23:22:11', null, null, null);
-INSERT INTO `alipay_gzuserinfo` VALUES ('BFF108EC931E4536BA9080CF7D3995D5', '20880052636945824756519942319455', null, null, null, null, null, null, null, null, null, '1', null, '402880a94742e24e014742e8942b0002', null, null, '2016-12-16 23:22:10', null, null, null);
-INSERT INTO `alipay_gzuserinfo` VALUES ('C306784D07B24B248414F6FBF8E613EB', '20880041016367641854592370619406', null, null, null, null, null, null, null, null, null, '1', null, '402880a94742e24e014742e8942b0002', null, null, '2016-12-16 23:22:10', null, null, null);
-INSERT INTO `alipay_gzuserinfo` VALUES ('C7CCA8EF98C84542A731EBD942AD733D', '20880083002076451711186572819460', null, null, null, null, null, null, null, null, null, '1', null, '402880a94742e24e014742e8942b0002', null, null, '2016-12-16 23:22:10', null, null, null);
-INSERT INTO `alipay_gzuserinfo` VALUES ('CBB40AD0E6D54B3DAF5879828FD8ABE0', '20881031842091485456878290019400', null, null, null, null, null, null, null, null, null, '1', null, '402880a94742e24e014742e8942b0002', null, null, '2016-12-16 23:22:10', null, null, null);
-INSERT INTO `alipay_gzuserinfo` VALUES ('D032471BFF2647B1BDCDAB4125704F65', '20880054849649162058401271619448', null, null, null, null, null, null, null, null, null, '1', null, '402880a94742e24e014742e8942b0002', null, null, '2016-12-16 23:22:10', null, null, null);
-INSERT INTO `alipay_gzuserinfo` VALUES ('D4AF2DDEF994433796B60EDCC1A6A82F', '20881008628840309308294061919451', null, null, null, null, null, null, null, null, null, '1', null, '402880a94742e24e014742e8942b0002', null, null, '2016-12-16 23:22:10', null, null, null);
-INSERT INTO `alipay_gzuserinfo` VALUES ('D74468FAFB684390BA37D8190F1E2A29', '20880052636951621298953472319423', null, null, null, null, null, null, null, null, null, '1', null, '402880a94742e24e014742e8942b0002', null, null, '2016-12-16 23:22:11', null, null, null);
-INSERT INTO `alipay_gzuserinfo` VALUES ('D7ED1DF388B543FF85D72F79A46229A2', '20880006335183580676997441719481', null, null, null, null, null, null, null, null, null, '1', null, '402880a94742e24e014742e8942b0002', null, null, '2016-12-16 23:22:10', null, null, null);
-INSERT INTO `alipay_gzuserinfo` VALUES ('DCD305341905476C83BB892662ADFFF2', '20880017519788123843699093119431', null, null, null, null, null, null, null, null, null, '1', null, '402880a94742e24e014742e8942b0002', null, null, '2016-12-16 23:22:10', null, null, null);
-INSERT INTO `alipay_gzuserinfo` VALUES ('DE036F6B67CE4ABA908F4057E91E6A1F', '20881062075117814388043142919429', null, null, null, null, null, null, null, null, null, '1', null, '402880a94742e24e014742e8942b0002', null, null, '2016-12-16 23:22:10', null, null, null);
-INSERT INTO `alipay_gzuserinfo` VALUES ('E563F6B0C7B347F2A51B557B68D2AA6E', '20881020743936685284609601819482', null, null, null, null, null, null, null, null, null, '1', null, '402880a94742e24e014742e8942b0002', null, null, '2016-12-16 23:22:10', null, null, null);
-INSERT INTO `alipay_gzuserinfo` VALUES ('E619ABA58D7E431AA77CE219A379B8CC', '20880062477199625608298250119401', null, null, null, null, null, null, null, null, null, '1', null, '402880a94742e24e014742e8942b0002', null, null, '2016-12-16 23:22:10', null, null, null);
-INSERT INTO `alipay_gzuserinfo` VALUES ('E87D1AFE236A4F289E6932E3C726678D', '20880040901491874064021250819440', null, null, null, null, null, null, null, null, null, '1', null, '402880a94742e24e014742e8942b0002', null, null, '2016-12-16 23:22:10', null, null, null);
-INSERT INTO `alipay_gzuserinfo` VALUES ('EA5B5EA13BD9429985751AA4955EDE97', '20880054197230903311605892619426', null, null, null, null, null, null, null, null, null, '1', null, '402880a94742e24e014742e8942b0002', null, null, '2016-12-16 23:22:11', null, null, null);
-INSERT INTO `alipay_gzuserinfo` VALUES ('ED9AA9441AE94D179AA9FA423CB656D6', '20881020743958050779744921819450', null, null, null, null, null, null, null, null, null, '1', null, '402880a94742e24e014742e8942b0002', null, null, '2016-12-16 23:22:10', null, null, null);
-INSERT INTO `alipay_gzuserinfo` VALUES ('EECD4BC04F12464788D733160C7837E9', '20880025747000150898423841219444', null, null, null, null, null, null, null, null, null, '1', null, '402880a94742e24e014742e8942b0002', null, null, '2016-12-16 23:22:10', null, null, null);
-INSERT INTO `alipay_gzuserinfo` VALUES ('F106CA80879D4C37A874B4233ADEA77E', '20881044007112297889880792119453', null, null, null, null, null, null, null, null, null, '1', null, '402880a94742e24e014742e8942b0002', null, null, '2016-12-16 23:22:10', null, null, null);
-INSERT INTO `alipay_gzuserinfo` VALUES ('FB092B532DDB4CC3B99917D157ABE923', '20880006335178293146795991719481', null, null, null, null, null, null, null, null, null, '1', null, '402880a94742e24e014742e8942b0002', null, null, '2016-12-16 23:22:11', null, null, null);
-INSERT INTO `alipay_gzuserinfo` VALUES ('FDEB026E934F4E0EB3706C64C1C2E11F', '20880030670529864292460260219434', null, null, null, null, null, null, null, null, null, '1', null, '402880a94742e24e014742e8942b0002', null, null, '2016-12-16 23:22:10', null, null, null);
+INSERT INTO `alipay_gzuserinfo` VALUES ('1A7FF1B75285465DBA40F0C70F5A71E8', '20881031842092627793459920019496', null, null, null, null, null, null, null, null, null, '1', null, '402880a94742e24e014742e8942b0002', null, null, '2016-12-20 23:11:01', null, null, null);
+INSERT INTO `alipay_gzuserinfo` VALUES ('348D4981D9BE45679BEEF80C4B4143F7', '20880083282343625743082342419456', null, null, null, null, null, null, null, null, null, '1', null, '402880a94742e24e014742e8942b0002', null, null, '2016-12-20 23:11:02', null, null, null);
+INSERT INTO `alipay_gzuserinfo` VALUES ('3E728B2D1CD34970BDE02BF2CDE90A51', '20881020743943595881371201819418', null, null, null, null, null, null, null, null, null, '1', null, '402880a94742e24e014742e8942b0002', null, null, '2016-12-20 23:11:01', null, null, null);
+INSERT INTO `alipay_gzuserinfo` VALUES ('4AD072326053422FBF8C3386EDCC8CAA', '20881020743943883608363651819482', null, null, null, null, null, null, null, null, null, '1', null, '402880a94742e24e014742e8942b0002', null, null, '2016-12-20 23:11:02', null, null, null);
+INSERT INTO `alipay_gzuserinfo` VALUES ('609C15B2CD9847EDBD39316AC68DC2A9', '20880020502862901156333911019474', null, null, null, null, null, null, null, null, null, '1', null, '402880a94742e24e014742e8942b0002', null, null, '2016-12-20 23:11:01', null, null, null);
+INSERT INTO `alipay_gzuserinfo` VALUES ('676FA11526F343B6B3D0F640502864DF', '20880059502513400130289910719407', null, null, null, null, null, null, null, null, null, '1', null, '402880a94742e24e014742e8942b0002', null, null, '2016-12-20 23:11:01', null, null, null);
+INSERT INTO `alipay_gzuserinfo` VALUES ('680F8B6DB78B435D9BB13C27F37D804E', '20880062477199306806543630119465', null, null, null, null, null, null, null, null, null, '1', null, '402880a94742e24e014742e8942b0002', null, null, '2016-12-20 23:11:02', null, null, null);
+INSERT INTO `alipay_gzuserinfo` VALUES ('7697E50079684FB0A5285CCDEF6724C5', '20880017519788123843699093119431', null, null, null, null, null, null, null, null, null, '1', null, '402880a94742e24e014742e8942b0002', null, null, '2016-12-20 23:11:01', null, null, null);
+INSERT INTO `alipay_gzuserinfo` VALUES ('8324E98277C042FA8331540DA145B2EE', '20880054849663244665282921619448', null, null, null, null, null, null, null, null, null, '1', null, '402880a94742e24e014742e8942b0002', null, null, '2016-12-20 23:11:01', null, null, null);
+INSERT INTO `alipay_gzuserinfo` VALUES ('881691286CB84D58B696F3D641E22EEE', '20880054197230107528206912619490', null, null, null, null, null, null, null, null, null, '1', null, '402880a94742e24e014742e8942b0002', null, null, '2016-12-20 23:11:01', null, null, null);
+INSERT INTO `alipay_gzuserinfo` VALUES ('952A264667154F2EB1ED849F15C08B2E', '20880074330486915983138131419414', null, null, null, null, null, null, null, null, null, '1', null, '402880a94742e24e014742e8942b0002', null, null, '2016-12-20 23:11:02', null, null, null);
+INSERT INTO `alipay_gzuserinfo` VALUES ('AA5AD0868B0949CD803EC39F02B8F02F', '20880083002078558077811642819460', null, null, null, null, null, null, null, null, null, '1', null, '402880a94742e24e014742e8942b0002', null, null, '2016-12-20 23:11:01', null, null, null);
+INSERT INTO `alipay_gzuserinfo` VALUES ('AC2DCF611F8D470CB7E0F342E9BB42D9', '20880074692262166946381440319403', null, null, null, null, null, null, null, null, null, '1', null, '402880a94742e24e014742e8942b0002', null, null, '2016-12-20 23:11:01', null, null, null);
+INSERT INTO `alipay_gzuserinfo` VALUES ('BF2E07F76B814341854E5070D7482180', '20881062565070899752701612719459', null, null, null, null, null, null, null, null, null, '1', null, '402880a94742e24e014742e8942b0002', null, null, '2016-12-20 23:11:01', null, null, null);
+INSERT INTO `alipay_gzuserinfo` VALUES ('CD10799649434381AA4292AAC67B50D0', '20880074330493508920562121419446', null, null, null, null, null, null, null, null, null, '1', null, '402880a94742e24e014742e8942b0002', null, null, '2016-12-20 23:11:02', null, null, null);
+INSERT INTO `alipay_gzuserinfo` VALUES ('E131E911FF434ABDAB50B85C015063A9', '20880020502872897336717011019410', null, null, null, null, null, null, null, null, null, '1', null, '402880a94742e24e014742e8942b0002', null, null, '2016-12-20 23:11:01', null, null, null);
+INSERT INTO `alipay_gzuserinfo` VALUES ('F3139DD1BC6D4D5794707B780CD096FC', '20881011548320625084538750519437', null, null, null, null, null, null, null, null, null, '1', null, '402880a94742e24e014742e8942b0002', null, null, '2016-12-20 23:11:01', null, null, null);
+INSERT INTO `alipay_gzuserinfo` VALUES ('F641D6DF5CCA42B3835F4EB7F832D73E', '20880006335185776137228431719449', null, null, null, null, null, null, null, null, null, '1', null, '402880a94742e24e014742e8942b0002', null, null, '2016-12-20 23:11:02', null, null, null);
 
 -- ----------------------------
 -- Table structure for alipay_menu
@@ -374,14 +320,20 @@ INSERT INTO `alipay_receivetext` VALUES ('1D95511136D446F4ADADCAF0269A50ED', 'je
 INSERT INTO `alipay_receivetext` VALUES ('2BEB7D3014BB45788426426E00E4F826', 'jeecg服务窗', '20880062477199306806543630119465', '2016-12-16 23:31:38', '文本消息', null, '用户关注', '回复成功', null, null, '402880a94742e24e014742e8942b0002', null, null, null, null, null, null, null);
 INSERT INTO `alipay_receivetext` VALUES ('456FADF59BA9426E918774244B5A6271', 'jeecg服务窗', '20880062477199306806543630119465', '2016-12-16 23:34:13', '文本消息', null, '触发文本', '回复成功', null, null, '402880a94742e24e014742e8942b0002', null, null, null, null, null, null, null);
 INSERT INTO `alipay_receivetext` VALUES ('4EBF4B4B9E5D48979CED14133A0084A7', 'jeecg服务窗', '20880062477199306806543630119465', '2016-12-16 23:23:04', '文本消息', null, 'jeecg', '回复成功', null, null, '402880a94742e24e014742e8942b0002', null, null, null, null, null, null, null);
+INSERT INTO `alipay_receivetext` VALUES ('5875496DAEC349469B1527B99E24AEC6', 'jeewx 演示服务窗', '20880062477199306806543630119465', '2016-12-20 18:29:49', '文本消息', null, '你好', '回复成功', null, null, '402880a94742e24e014742e8942b0002', null, null, null, null, null, null, null);
+INSERT INTO `alipay_receivetext` VALUES ('688BE88D5C9D4338B462C0E9C2EED79F', 'jeewx 演示服务窗', '20880062477199306806543630119465', '2016-12-20 16:24:16', '文本消息', null, '你好', '回复成功', null, null, '402880a94742e24e014742e8942b0002', null, null, null, null, null, null, null);
 INSERT INTO `alipay_receivetext` VALUES ('705AF89B7AC74C9AA7186C1FB5F0A191', 'jeecg服务窗', '20880062477199306806543630119465', '2016-12-16 23:32:07', '文本消息', null, '用户关注', '回复成功', null, null, '402880a94742e24e014742e8942b0002', null, null, null, null, null, null, null);
 INSERT INTO `alipay_receivetext` VALUES ('7EECFCEBBF094C75B14C15FBB5C9C47C', 'jeecg服务窗', '20880062477199306806543630119465', '2016-12-16 23:32:09', '文本消息', null, '捷微官网', '回复成功', null, null, '402880a94742e24e014742e8942b0002', null, null, null, null, null, null, null);
 INSERT INTO `alipay_receivetext` VALUES ('80C5E7B0FCAF4388BC6D044478A2D8E5', 'jeecg服务窗', '20880062477199306806543630119465', '2016-12-16 23:32:21', '文本消息', null, 'jeecg', '回复成功', null, null, '402880a94742e24e014742e8942b0002', null, null, null, null, null, null, null);
 INSERT INTO `alipay_receivetext` VALUES ('A25BAB80B918413480817CD454788D12', 'jeecg服务窗', '20880062477199306806543630119465', '2016-12-16 23:34:08', '文本消息', null, '用户关注', '回复成功', null, null, '402880a94742e24e014742e8942b0002', null, null, null, null, null, null, null);
+INSERT INTO `alipay_receivetext` VALUES ('A2765C2E61F1485AA5BD90B0D9E7A29B', 'jeewx 演示服务窗', '20880062477199306806543630119465', '2016-12-20 16:25:28', '文本消息', null, '用户关注', '回复成功', null, null, '402880a94742e24e014742e8942b0002', null, null, null, null, null, null, null);
 INSERT INTO `alipay_receivetext` VALUES ('A5D8A523E34E4CAEB341861230AE403E', 'jeecg服务窗', '20880062477199306806543630119465', '2016-12-16 23:36:13', '文本消息', null, '捷微产品', '回复成功', null, null, '402880a94742e24e014742e8942b0002', null, null, null, null, null, null, null);
 INSERT INTO `alipay_receivetext` VALUES ('AB93899B9B1C4BCCA75D5224F06EA626', 'jeecg服务窗', '20880062477199306806543630119465', '2016-12-16 23:34:19', '文本消息', null, '捷微官网', '回复成功', null, null, '402880a94742e24e014742e8942b0002', null, null, null, null, null, null, null);
+INSERT INTO `alipay_receivetext` VALUES ('C52F59EAE52F46DD961A6F3E0CED4190', 'jeewx 演示服务窗', '20880062477199306806543630119465', '2016-12-20 16:26:03', '文本消息', null, '用户关注', '回复成功', null, null, '402880a94742e24e014742e8942b0002', null, null, null, null, null, null, null);
 INSERT INTO `alipay_receivetext` VALUES ('C81412D555D748CDA1E1942490AD9D67', 'jeecg服务窗', '20880062477199306806543630119465', '2016-12-16 23:32:18', '文本消息', null, '捷微官网', '回复成功', null, null, '402880a94742e24e014742e8942b0002', null, null, null, null, null, null, null);
+INSERT INTO `alipay_receivetext` VALUES ('CA7368B20029427C96316C4AB191C19B', 'jeewx 演示服务窗', '20880062477199306806543630119465', '2016-12-20 16:26:37', '文本消息', null, '你好', '回复成功', null, null, '402880a94742e24e014742e8942b0002', null, null, null, null, null, null, null);
 INSERT INTO `alipay_receivetext` VALUES ('D1701D132BA64AF298C4A125F42B82A9', 'jeecg服务窗', '20880062477199306806543630119465', '2016-12-16 23:34:16', '文本消息', null, '触发图文', '回复成功', null, null, '402880a94742e24e014742e8942b0002', null, null, null, null, null, null, null);
+INSERT INTO `alipay_receivetext` VALUES ('F23306EEFF6A48F0BC7F9311B5477BC0', 'jeewx 演示服务窗', '20880062477199306806543630119465', '2016-12-20 16:24:36', '文本消息', null, '你好', '回复成功', null, null, '402880a94742e24e014742e8942b0002', null, null, null, null, null, null, null);
 
 -- ----------------------------
 -- Table structure for alipay_receivetext_content
@@ -430,7 +382,7 @@ INSERT INTO `alipay_texttemplate` VALUES ('8a792db34fdf51b3014fdfa391fd002a', '�
 INSERT INTO `alipay_texttemplate` VALUES ('8a792db34fdf51b3014fdfb196200049', '验证回复语', '验证回复语', '402880a94742e24e014742e8942b0002', null, null, null, null, null, null);
 INSERT INTO `alipay_texttemplate` VALUES ('8a792db34fdf51b3014fdfb1fdb3004c', '关注回复语', '关注回复语，欢迎你关注jeecg支付服务窗', '402880a94742e24e014742e8942b0002', null, null, null, null, null, null);
 INSERT INTO `alipay_texttemplate` VALUES ('B1AB9EE54A4542B5954F389A01113F53', 'JEEWX产品介绍', 'Jeewx是一款开源、免费的微信管家系统（多触点管理平台）。采用JAVA语言，支持微信公众号、微信企业号、支付宝服务窗、QQ公众号、微博账号等多触点管理。Jeewx实现了微信、支付窗、微信企业号、微博等触点的基础管理功能，便于用户二次开发。\n官网：www.jeewx.com\nQQ群：289709451', '402880a94742e24e014742e8942b0002', null, null, '2016-12-16 23:34:57', null, null, null);
-INSERT INTO `alipay_texttemplate` VALUES ('F65B42281D1E46E69FBEAEEC43587F6D', 'nihao', 'nihao你好，欢迎你关注jeecg支付宝服务窗', '402880a94742e24e014742e8942b0002', null, null, '2016-03-25 15:46:48', null, null, null);
+INSERT INTO `alipay_texttemplate` VALUES ('F65B42281D1E46E69FBEAEEC43587F6D', 'nihao', 'nihao你好，欢迎你关注 Jeewx 支付宝服务窗 ！！！', '402880a94742e24e014742e8942b0002', null, null, '2016-03-25 15:46:48', null, null, null);
 INSERT INTO `alipay_texttemplate` VALUES ('ff808081538e81b40153a172bfcc0070', 'JEECG产品介绍', 'JEECG是一款基于代码生成器的J2EE快速开发平台，开源界“小普元”超越传统商业企业级开发平台。引领新的开发模式(Online Coding模式(自定义表单);代码生成器模式;手工MERGE智能开发)， 可以帮助解决Java项目60%的重复工作，让开发更多关注业务逻辑。既能快速提高开发效率，帮助公司节省人力成本，同时又不失灵活性。具备：表单配置能力（无需编码）、移动配置能力、工作流配置能力、报表配置能力（支持移动端）、插件开发能力（可插拔） http://www.guojusoft.com ', '402880a94742e24e014742e8942b0002', null, null, null, null, null, null);
 
 -- ----------------------------
@@ -1184,7 +1136,7 @@ CREATE TABLE `qywx_account` (
 -- ----------------------------
 -- Records of qywx_account
 -- ----------------------------
-INSERT INTO `qywx_account` VALUES ('402880a94742e24e014742e8942b0002', '捷微企业号', 'wx967db4406788c64c', '544bIhjU9NdggBEPUbHi7FTLlU8n2b8z39UaM0NO_wd1CtoP4TagC8UDnlWdZsug', null, '', null, null, null, null, null, null, 'RFOl_SlWhPVBYc1-mc2gzd9Ul2eS7MhM7pXyp9zAjMBAWQxqG5ETKJGixXk5tNWB');
+INSERT INTO `qywx_account` VALUES ('402880a94742e24e014742e8942b0002', '捷微企业号', '?', '?', null, '', null, null, null, null, null, null, '?');
 
 -- ----------------------------
 -- Table structure for qywx_agent
@@ -1221,8 +1173,8 @@ CREATE TABLE `qywx_agent` (
 -- ----------------------------
 -- Records of qywx_agent
 -- ----------------------------
-INSERT INTO `qywx_agent` VALUES ('1', '402880a94742e24e014742e8942b0002', '1', '微信考勤', 'jeewx', 'asV5OOITVJg9BhEU4445OLg91IfF6GPued1sAR8RgYY', '111url', '11', null, '', '1', '', '2', '1', '0', '1', null, null, null, null, null, null, null);
-INSERT INTO `qywx_agent` VALUES ('DC46552CD5AE4DF2AE12680C4636C9BA', '402880a94742e24e014742e8942b0002', '4', '公司公告', 'jeewx', 'b2rxXq7GMymOskwpkMnwKPctb6ySWnmDQVIu7q0lKOW', '', null, null, '', '1', 'http://fly1206.xicp.net/weixinCoreController.do?wechat&corpid=wx967db4406788c64c&appid=4', '0', '0', '0', '1', null, null, null, null, null, null, null);
+INSERT INTO `qywx_agent` VALUES ('1', '402880a94742e24e014742e8942b0002', '1', '微信考勤', 'jeewx', '?', '111url', '11', null, '', '1', '', '2', '1', '0', '1', null, null, null, null, null, null, null);
+INSERT INTO `qywx_agent` VALUES ('DC46552CD5AE4DF2AE12680C4636C9BA', '402880a94742e24e014742e8942b0002', '4', '公司公告', 'jeewx', '?', '', null, null, '', '1', 'http://fly1206.xicp.net/weixinCoreController.do?wechat&corpid=wx967db4406788c64c&appid=4', '0', '0', '0', '1', null, null, null, null, null, null, null);
 
 -- ----------------------------
 -- Table structure for qywx_autoresponse
@@ -1251,6 +1203,7 @@ CREATE TABLE `qywx_autoresponse` (
 INSERT INTO `qywx_autoresponse` VALUES ('43232F1A56E94BD099139FADD1EFD53F', '01', '8a792db34fdf51b3014fdfa391fd002a', 'text', '素材一句话冠亚军', '402880a94742e24e014742e8942b0002', null, null, '2016-07-13 14:23:03', null, null, null);
 INSERT INTO `qywx_autoresponse` VALUES ('694835F2933C4410A639906639F18D77', 'nihao', 'F65B42281D1E46E69FBEAEEC43587F6D', 'text', 'nihao', '402880a94742e24e014742e8942b0002', null, null, '2016-04-18 12:43:00', null, null, null);
 INSERT INTO `qywx_autoresponse` VALUES ('8a792db34fdf51b3014fdfa937e90038', 'jeecg', 'ff808081538e81b401539bb4b1c80034', 'news', 'QQQ', '402880a94742e24e014742e8942b0002', null, null, null, null, null, null);
+INSERT INTO `qywx_autoresponse` VALUES ('CCA4FFD6B26E481C878FF715C708CB55', '你好', 'F65B42281D1E46E69FBEAEEC43587F6D', 'text', 'nihao', '402880a94742e24e014742e8942b0002', null, null, '2016-12-20 16:47:48', null, null, null);
 
 -- ----------------------------
 -- Table structure for qywx_autoresponse_default
@@ -1381,7 +1334,7 @@ CREATE TABLE `qywx_gzuserinfo` (
 -- ----------------------------
 -- Records of qywx_gzuserinfo
 -- ----------------------------
-INSERT INTO `qywx_gzuserinfo` VALUES ('6A36781865A349359AADABE81C42D3AF', 'qinfeng', '秦风', '1', null, '18611788525', null, '1', null, null, 'http://shp.qpic.cn/bizmp/UBykN6XtpLRw6ibU7nBJUzEaicdO55PfUTic6XWqxIPbiaiciclQiav3DD01A/', '1', null, '402880a94742e24e014742e8942b0002', null, null, '2016-12-17 00:16:30', null, null, null);
+INSERT INTO `qywx_gzuserinfo` VALUES ('6A36781865A349359AADABE81C42D3AF', 'qinfeng', '秦风', '1', null, '18600000000', null, '1', null, null, 'http://shp.qpic.cn/bizmp/UBykN6XtpLRw6ibU7nBJUzEaicdO55PfUTic6XWqxIPbiaiciclQiav3DD01A/', '1', null, '402880a94742e24e014742e8942b0002', null, null, '2016-12-17 00:16:30', null, null, null);
 
 -- ----------------------------
 -- Table structure for qywx_location
@@ -1402,7 +1355,7 @@ CREATE TABLE `qywx_location` (
 -- ----------------------------
 -- Records of qywx_location
 -- ----------------------------
-INSERT INTO `qywx_location` VALUES ('4065B9C7598C41168B07BC09FEC72757', 'wx967db4406788c64c', 'qinfeng', '2016-12-17 00:27:00', '40.067616', '116.405525', null, '1', '30.000000');
+INSERT INTO `qywx_location` VALUES ('4065B9C7598C41168B07BC09FEC72757', 'wx967db4406788c64c', 'qinfeng', '2016-12-17 00:27:00', '40.056004', '116.404671', null, '1', '30.000000');
 INSERT INTO `qywx_location` VALUES ('BF3219EA3F2840938BDA4FDE703A5E36', 'wx967db4406788c64c', 'qinfeng', '2016-12-17 01:29:17', '40.067616', '116.405525', null, '4', '30.000000');
 
 -- ----------------------------
@@ -1550,6 +1503,8 @@ CREATE TABLE `qywx_receivetext` (
 -- Records of qywx_receivetext
 -- ----------------------------
 INSERT INTO `qywx_receivetext` VALUES ('0356C7F17AD64D0CBCD2E706DD1B94F2', 'wx967db4406788c64c', 'qinfeng', '2016-12-17 00:22:04', 'text', '2938593396750063237', 'nihao', '0', null, '', '402880a94742e24e014742e8942b0002', '1', null, null, '2016-12-17 00:27:00', null, null, null);
+INSERT INTO `qywx_receivetext` VALUES ('28D7E805A9E94F3A8A31E521BEC477AB', 'wx967db4406788c64c', 'qinfeng', '2016-12-20 18:29:19', 'text', '2938593396750063242', '你好', '0', null, '', '402880a94742e24e014742e8942b0002', '1', null, null, '2016-12-20 18:29:20', null, null, null);
+INSERT INTO `qywx_receivetext` VALUES ('2BAA99FFE8AC434B8AD5C9D434678630', 'wx967db4406788c64c', 'qinfeng', '2016-12-20 16:48:36', 'text', '2938593396750063241', '你好', '0', null, '', '402880a94742e24e014742e8942b0002', '1', null, null, '2016-12-20 16:48:36', null, null, null);
 INSERT INTO `qywx_receivetext` VALUES ('5EB24BDFAC51430C80607E4F3442C8D0', 'wx967db4406788c64c', 'qinfeng', '2016-12-17 00:28:33', 'text', '2938593396750063239', 'jeecg', '0', null, '', '402880a94742e24e014742e8942b0002', '1', null, null, '2016-12-17 00:28:29', null, null, null);
 INSERT INTO `qywx_receivetext` VALUES ('A7B14A39A72D4476B5D402232552A72C', 'wx967db4406788c64c', 'qinfeng', '2016-12-17 00:22:04', 'text', '2938593396750063237', 'nihao', '0', null, '', '402880a94742e24e014742e8942b0002', '1', null, null, '2016-12-17 00:26:59', null, null, null);
 INSERT INTO `qywx_receivetext` VALUES ('C57E74A3402E433F9EF7AFA672AAC540', 'wx967db4406788c64c', 'qinfeng', '2016-12-17 00:29:24', 'text', '2938593396750063240', 'jeecg', '0', null, '', '402880a94742e24e014742e8942b0002', '1', null, null, '2016-12-17 00:29:21', null, null, null);
@@ -1580,7 +1535,7 @@ CREATE TABLE `qywx_texttemplate` (
 INSERT INTO `qywx_texttemplate` VALUES ('8a792db34fdf51b3014fdfa391fd002a', '素材01', '素材01，测试素材文本功能', '402880a94742e24e014742e8942b0002', null, null, null, null, null, null);
 INSERT INTO `qywx_texttemplate` VALUES ('8a792db34fdf51b3014fdfb196200049', '验证回复语', '验证回复语', '402880a94742e24e014742e8942b0002', null, null, null, null, null, null);
 INSERT INTO `qywx_texttemplate` VALUES ('8a792db34fdf51b3014fdfb1fdb3004c', '默认回复语', '默认回复语', '402880a94742e24e014742e8942b0002', null, null, null, null, null, null);
-INSERT INTO `qywx_texttemplate` VALUES ('F65B42281D1E46E69FBEAEEC43587F6D', 'nihao', '你好，欢迎你关注JEEWX产品', '402880a94742e24e014742e8942b0002', null, null, '2016-03-25 15:46:48', null, null, null);
+INSERT INTO `qywx_texttemplate` VALUES ('F65B42281D1E46E69FBEAEEC43587F6D', 'nihao', '你好，欢迎你关注JEEWX产品，我是微信企业号触点！！！', '402880a94742e24e014742e8942b0002', null, null, '2016-03-25 15:46:48', null, null, null);
 
 -- ----------------------------
 -- Table structure for t_finance
@@ -1697,7 +1652,7 @@ CREATE TABLE `t_s_base_user` (
 INSERT INTO `t_s_base_user` VALUES ('402881e4461f9c6401461fa2e6f50002', null, null, '4be1dd049390623054515c6d433c4e3c', 'tingfeng', null, '1', null, 'tingfeng', '4028d881436d514601436d5214d70015');
 INSERT INTO `t_s_base_user` VALUES ('402881e44648134a014648174a45000c', null, null, 'e0d5cae5376f58ac', 'jeecg测试', null, '1', null, 'ceshi', '4028d881436d514601436d5214d70015');
 INSERT INTO `t_s_base_user` VALUES ('4028d881436d514601436d5215ac0043', null, null, 'c44b01947c9e6e3f', '管理员', null, '1', null, 'admin', '4028d881436d514601436d5214d70015');
-INSERT INTO `t_s_base_user` VALUES ('4028d881436d514601436d5215b20044', '0', null, '97c07a884bf272b5', '张代浩', null, '1', null, 'scott', '4028d881436d514601436d5214f30017');
+INSERT INTO `t_s_base_user` VALUES ('4028d881436d514601436d5215b20044', null, null, '97c07a884bf272b5', '张代浩', null, '1', null, 'scott', '4028d881436d514601436d5214f30017');
 INSERT INTO `t_s_base_user` VALUES ('4028d881436d514601436d5215b80045', '0', null, 'f2322ec2fb9f40d1', '采购员', null, '1', null, 'cgy', '4028d881436d514601436d5214d70015');
 INSERT INTO `t_s_base_user` VALUES ('4028d881436d514601436d5215bc0046', '1', null, 'a324509dc1a3089a', '采购审批员', null, '1', null, 'cgspy', '4028d881436d514601436d5214d70015');
 
@@ -2214,6 +2169,20 @@ INSERT INTO `t_s_log` VALUES ('402880f259074906015907586847001c', 'Chrome', '更
 INSERT INTO `t_s_log` VALUES ('402880f25907490601590758e1f6001d', 'Chrome', '更新联系我们的菜单信息信息成功！', '5', '192.168.0.114', '2016-12-16 19:16:22', '1', '4028d881436d514601436d5215ac0043');
 INSERT INTO `t_s_log` VALUES ('402880f259074906015907593698001f', 'Chrome', '添加联系我们的信息成功！', '3', '192.168.0.114', '2016-12-16 19:16:44', '1', '4028d881436d514601436d5215ac0043');
 INSERT INTO `t_s_log` VALUES ('402880f25907490601590759a05b0020', 'Chrome', '同步菜单信息数据成功！', '4', '192.168.0.114', '2016-12-16 19:17:11', '1', '4028d881436d514601436d5215ac0043');
+INSERT INTO `t_s_log` VALUES ('402880f3591a355e01591a361c4a0000', 'Chrome', '用户: admin[信息部]登录成功', '1', '192.168.0.115', '2016-12-20 11:11:10', '1', '4028d881436d514601436d5215ac0043');
+INSERT INTO `t_s_log` VALUES ('402880f3591a58f101591a5a0fb40000', 'Chrome', '用户: admin[信息部]登录成功', '1', '192.168.0.115', '2016-12-20 11:50:26', '1', '4028d881436d514601436d5215ac0043');
+INSERT INTO `t_s_log` VALUES ('402880f3591a5be201591a72f8020000', 'Chrome', '用户: admin[信息部]登录成功', '1', '192.168.0.115', '2016-12-20 12:17:39', '1', '4028d881436d514601436d5215ac0043');
+INSERT INTO `t_s_log` VALUES ('402880f3591a770001591a77423c0000', 'Chrome', '用户: admin[信息部]登录成功', '1', '192.168.0.115', '2016-12-20 12:22:20', '1', '4028d881436d514601436d5215ac0043');
+INSERT INTO `t_s_log` VALUES ('402880f3591a8ef001591a8f61c80000', 'Chrome', '用户: admin[信息部]登录成功', '1', '192.168.0.115', '2016-12-20 12:48:41', '1', '4028d881436d514601436d5215ac0043');
+INSERT INTO `t_s_log` VALUES ('402880f3591a8ef001591a93d5170001', 'Chrome', '用户: admin[信息部]登录成功', '1', '192.168.0.115', '2016-12-20 12:53:33', '1', '4028d881436d514601436d5215ac0043');
+INSERT INTO `t_s_log` VALUES ('402880f3591a8ef001591abeef620002', 'Chrome', '用户: admin[信息部]登录成功', '1', '192.168.0.115', '2016-12-20 13:40:37', '1', '4028d881436d514601436d5215ac0043');
+INSERT INTO `t_s_log` VALUES ('402880f3591b2a3001591b2ace540000', 'Chrome', '用户: admin[信息部]登录成功', '1', '192.168.0.115', '2016-12-20 15:38:27', '1', '4028d881436d514601436d5215ac0043');
+INSERT INTO `t_s_log` VALUES ('402880f3591b2a3001591b40b08a0002', 'Chrome', '用户: admin[信息部]登录成功', '1', '192.168.0.115', '2016-12-20 16:02:21', '1', '4028d881436d514601436d5215ac0043');
+INSERT INTO `t_s_log` VALUES ('402880f3591ba19b01591ba1ed970000', 'Chrome', '用户: admin[信息部]登录成功', '1', '192.168.0.115', '2016-12-20 17:48:34', '1', '4028d881436d514601436d5215ac0043');
+INSERT INTO `t_s_log` VALUES ('402880f3591bc49901591bc5c6440000', 'Chrome', '用户: admin[信息部]登录成功', '1', '192.168.0.115', '2016-12-20 18:27:43', '1', '4028d881436d514601436d5215ac0043');
+INSERT INTO `t_s_log` VALUES ('402880f3591bf0d301591bf135bb0000', 'Chrome', '用户: admin[信息部]登录成功', '1', '192.168.0.115', '2016-12-20 19:15:09', '1', '4028d881436d514601436d5215ac0043');
+INSERT INTO `t_s_log` VALUES ('402880f3591bf0d301591bf1fec60001', 'Chrome', '用户admin已退出', '2', '192.168.0.115', '2016-12-20 19:16:01', '1', '4028d881436d514601436d5215ac0043');
+INSERT INTO `t_s_log` VALUES ('402880f3591bf0d301591bf2bbcb0002', 'Chrome', '用户: admin[信息部]登录成功', '1', '192.168.0.115', '2016-12-20 19:16:49', '1', '4028d881436d514601436d5215ac0043');
 INSERT INTO `t_s_log` VALUES ('402881865907db74015907e281b30000', 'Chrome', '用户: admin[信息部]登录成功', '1', '192.168.1.6', '2016-12-16 21:46:41', '1', '4028d881436d514601436d5215ac0043');
 INSERT INTO `t_s_log` VALUES ('402881865907db74015907edcd160001', 'Chrome', '用户: admin[信息部]登录成功', '1', '192.168.1.6', '2016-12-16 21:59:02', '1', '4028d881436d514601436d5215ac0043');
 INSERT INTO `t_s_log` VALUES ('402881865907db74015907f004250002', 'Chrome', '用户: admin[信息部]登录成功', '1', '192.168.1.6', '2016-12-16 22:01:27', '1', '4028d881436d514601436d5215ac0043');
@@ -2248,6 +2217,14 @@ INSERT INTO `t_s_log` VALUES ('40288186590ac45401590ac65c880003', 'Chrome', '权
 INSERT INTO `t_s_log` VALUES ('40288186590ac45401590ac673930004', 'Chrome', '权限: 群发管理被更新成功', '5', '192.168.1.6', '2016-12-17 11:14:54', '1', '4028d881436d514601436d5215ac0043');
 INSERT INTO `t_s_log` VALUES ('40288186590ac45401590ac681460005', 'Chrome', '用户admin已退出', '2', '192.168.1.6', '2016-12-17 11:14:58', '1', '4028d881436d514601436d5215ac0043');
 INSERT INTO `t_s_log` VALUES ('40288186590ac45401590ac699860006', 'Chrome', '用户: admin[信息部]登录成功', '1', '192.168.1.6', '2016-12-17 11:15:04', '1', '4028d881436d514601436d5215ac0043');
+INSERT INTO `t_s_log` VALUES ('40288186590b0be801590b0f02600000', 'Chrome', '用户: admin[信息部]登录成功', '1', '192.168.1.6', '2016-12-17 12:34:10', '1', '4028d881436d514601436d5215ac0043');
+INSERT INTO `t_s_log` VALUES ('40288186590b208c01590b2156310000', 'Chrome', '用户: admin[信息部]登录成功', '1', '192.168.1.6', '2016-12-17 12:54:11', '1', '4028d881436d514601436d5215ac0043');
+INSERT INTO `t_s_log` VALUES ('40288186591caa1001591caaf2bf0000', 'Chrome', '用户: admin[信息部]登录成功', '1', '192.168.1.6', '2016-12-20 22:38:02', '1', '4028d881436d514601436d5215ac0043');
+INSERT INTO `t_s_log` VALUES ('40288186591caa1001591cc6a3650001', 'Chrome', '微信公众帐号信息更新成功', '5', '192.168.1.6', '2016-12-20 23:08:17', '1', '4028d881436d514601436d5215ac0043');
+INSERT INTO `t_s_log` VALUES ('40288186591caa1001591cc6b31f0002', 'Chrome', '微信公众帐号信息更新成功', '5', '192.168.1.6', '2016-12-20 23:08:21', '1', '4028d881436d514601436d5215ac0043');
+INSERT INTO `t_s_log` VALUES ('40288186591caa1001591cc774de0004', 'Chrome', '用户: scott更新成功', '5', '192.168.1.6', '2016-12-20 23:09:10', '1', '4028d881436d514601436d5215ac0043');
+INSERT INTO `t_s_log` VALUES ('40288186591caa1001591cc793650006', 'Chrome', '用户: scott更新成功', '5', '192.168.1.6', '2016-12-20 23:09:18', '1', '4028d881436d514601436d5215ac0043');
+INSERT INTO `t_s_log` VALUES ('40288186591caa1001591cc7c4990008', 'Chrome', '用户: scott更新成功', '5', '192.168.1.6', '2016-12-20 23:09:31', '1', '4028d881436d514601436d5215ac0043');
 INSERT INTO `t_s_log` VALUES ('4028948151d85f5c0151d86164480000', 'Chrome', '用户: admin[信息部]登录成功', '1', '192.168.20.1', '2015-12-25 17:04:00', '1', '4028d881436d514601436d5215ac0043');
 INSERT INTO `t_s_log` VALUES ('4028948151dc628d0151dc643c080000', 'Chrome', '用户: admin[信息部]登录成功', '1', '192.168.20.1', '2015-12-26 11:45:35', '1', '4028d881436d514601436d5215ac0043');
 INSERT INTO `t_s_log` VALUES ('4028948151dc6b1f0151dc6dfe7b0005', 'Chrome', '用户: admin[信息部]登录成功', '1', '192.168.20.1', '2015-12-26 11:56:14', '1', '4028d881436d514601436d5215ac0043');
@@ -2641,9 +2618,9 @@ CREATE TABLE `t_s_role_user` (
 -- ----------------------------
 -- Records of t_s_role_user
 -- ----------------------------
+INSERT INTO `t_s_role_user` VALUES ('40288186591caa1001591cc7c4920007', '4028d881436d514601436d5215a00042', '4028d881436d514601436d5215b20044');
 INSERT INTO `t_s_role_user` VALUES ('402881e4461f9c6401461fa3956d0009', '4028d881436d514601436d52159c0041', '402881e4461f9c6401461fa2e6f50002');
 INSERT INTO `t_s_role_user` VALUES ('402881e44648134a014648174ab3000d', '402881e44648134a014648163a6d0001', '402881e44648134a014648174a45000c');
-INSERT INTO `t_s_role_user` VALUES ('4028d881436d514601436d5217a700c1', '4028d881436d514601436d5215a00042', '4028d881436d514601436d5215b20044');
 INSERT INTO `t_s_role_user` VALUES ('4028d881436d514601436d5217aa00c2', '4028d881436d514601436d52159c0041', '4028d881436d514601436d5215b80045');
 INSERT INTO `t_s_role_user` VALUES ('4028d881436d514601436d5217ad00c3', '4028d881436d514601436d52159c0041', '4028d881436d514601436d5215bc0046');
 INSERT INTO `t_s_role_user` VALUES ('4028ef8153f4151f0153f423b228000b', '4028d881436d514601436d52159c0041', '4028d881436d514601436d5215ac0043');
@@ -3135,7 +3112,7 @@ CREATE TABLE `t_s_user` (
 INSERT INTO `t_s_user` VALUES ('', '', '', null, '402881e4461f9c6401461fa2e6f50002', '', null);
 INSERT INTO `t_s_user` VALUES ('', '', '', null, '402881e44648134a014648174a45000c', '', null);
 INSERT INTO `t_s_user` VALUES ('', '', '', 'images/renfang/qm/licf.gif', '4028d881436d514601436d5215ac0043', '', null);
-INSERT INTO `t_s_user` VALUES ('zhangdaiscott@163.com', '13426432910', '7496661', null, '4028d881436d514601436d5215b20044', '', null);
+INSERT INTO `t_s_user` VALUES ('zhangdaiscott@163.com', '', '', null, '4028d881436d514601436d5215b20044', '', null);
 INSERT INTO `t_s_user` VALUES (null, null, null, null, '4028d881436d514601436d5215b80045', '', null);
 INSERT INTO `t_s_user` VALUES (null, null, null, null, '4028d881436d514601436d5215bc0046', '', null);
 
@@ -3200,7 +3177,7 @@ CREATE TABLE `weixin_account` (
 -- ----------------------------
 -- Records of weixin_account
 -- ----------------------------
-INSERT INTO `weixin_account` VALUES ('402881e8461795c201461795c2e90000', 'Jeewx演示账号', 'jeewx', 'guojusoft', '1', 'jeecg@sina.com', '无', 'Yx8dQ3Qcua_oTL8e9d29nTlxK47HWNzjfa8o11FQSx2cwELWwcmudfbmbPBDQVgquDB7A4bS6mydYtxrZC4Q3J0aiGpAXHztS9x5ODIMfTZyxN7QUrX7x98cQNjq42PsYDIeCAAHMR', 'wxc60a4d9cbac8092d', 'b04b96bae405f63a65f09d4f10a5a165', '2016-12-16 19:01:16', 'admin', 'gh_20419b74f848', 'IpK_1T69hDhZkLQTlwsAXyjkZaTEYbX_kE6IkQ8b5Waw7uX8zbeFp34lurpnPaSKLMQZZ1RsvceEiMn6_ft3cA', '2016-08-22 14:48:38', 'kgt8ON7yVITDhtdwci0qeeC2RWfOAQ1Sc_HMdjrzSlraUPZXwezL4_Ktnr4IEDg5IR7JvLV1ArCiotpVwsjXjQ', '2016-12-16 16:49:46');
+INSERT INTO `weixin_account` VALUES ('402881e8461795c201461795c2e90000', 'Jeewx演示账号', 'jeewx', 'guojusoft', '1', 'jeecg@sina.com', '无', 'UudfmlPWU-fSHa5vl1KBt1hMnhQLQL53UxTjcZj_6h0zK3Ar_8QMArQAnypjMq-OMelg69XwZ1RPpCY3la6aM_q3s9w25LjsVq2R3Nj9rPO12TqrNtfYkpv0YhjjITkfIBWfCGAXQL', 'wxc60a4d9cbac8092d', '?', '2016-12-20 23:08:22', 'admin', '?', 'IpK_1T69hDhZkLQTlwsAXyjkZaTEYbX_kE6IkQ8b5Waw7uX8zbeFp34lurpnPaSKLMQZZ1RsvceEiMn6_ft3cA', '2016-08-22 14:48:38', 'kgt8ON7yVITDhtdwci0qeeC2RWfOAQ1Sc_HMdjrzSlpbgBEpB7t7JQlTHnS-4WyK2Jnp3m5UbeKswqZoKKNDBw', '2016-12-20 23:08:22');
 
 -- ----------------------------
 -- Table structure for weixin_autoresponse
@@ -3647,6 +3624,8 @@ CREATE TABLE `weixin_receivetext` (
 INSERT INTO `weixin_receivetext` VALUES ('402880f2590749060159074b49580004', '01', '2016-12-16 19:01:31', 'o94BGv4wkjYm7GV6tnh1IHC_F0Z4', '6364652314832334913', 'text', null, '0', 'gh_20419b74f848', 'gh_20419b74f848', null);
 INSERT INTO `weixin_receivetext` VALUES ('402880f2590749060159074be5b40006', '你好', '2016-12-16 19:02:11', 'o94BGv4wkjYm7GV6tnh1IHC_F0Z4', '6364652486631026762', 'text', null, '0', 'gh_20419b74f848', 'gh_20419b74f848', null);
 INSERT INTO `weixin_receivetext` VALUES ('402880f2590749060159074d69490007', '大转盘', '2016-12-16 19:03:50', 'o94BGv4wkjYm7GV6tnh1IHC_F0Z4', '6364652911832789078', 'text', null, '0', 'gh_20419b74f848', 'gh_20419b74f848', null);
+INSERT INTO `weixin_receivetext` VALUES ('402880f3591b2a3001591b32e7c50001', '你好', '2016-12-20 15:47:18', 'o94BGv4wkjYm7GV6tnh1IHC_F0Z4', '6366086537556470254', 'text', null, '0', 'gh_20419b74f848', 'gh_20419b74f848', null);
+INSERT INTO `weixin_receivetext` VALUES ('402880f3591bc49901591bc76e220001', '你好', '2016-12-20 18:29:31', 'o94BGv4wkjYm7GV6tnh1IHC_F0Z4', '6366128383422835970', 'text', null, '0', 'gh_20419b74f848', 'gh_20419b74f848', null);
 
 -- ----------------------------
 -- Table structure for weixin_subscribe
