@@ -81,6 +81,7 @@ Jeewx是一款开源、免费的微信管家系统（多触点管理平台），
 -----------------------------------
   * eclipse + jdk7 + tomcat6 + maven + mysql （注意：暂时不支持jdk8）
   * [依赖下载慢，享受一下mvn飞的感觉](http://www.jeecg.org/forum.php?mod=viewthread&tid=3949)
+  * [JEEWX3.0版本视频教程-New](http://pan.baidu.com/s/1i4PHOXn)
 
 
 五、技术交流
