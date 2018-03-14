@@ -5,6 +5,8 @@
 <head>
 <title>JeeWx 开源微信管家平台</title>
 <t:base type="jquery,easyui,tools,DatePicker,autocomplete"></t:base>
+<!-- layer 提示信息，插件提交不了问题解决   scott  20180314 -->
+<script src="plug-in-ui/hplus/js/plugins/layer/layer.min.js"></script>
 <link rel="shortcut icon" href="images/favicon.ico">
 <style type="text/css">
 a {
