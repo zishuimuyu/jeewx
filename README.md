@@ -120,16 +120,16 @@ Jeewx是一款开源的微信运营平台，采用JAVA语言微服务架构，�
 	
 七、技术交流
 -----------------------------------
-* 捷微H5官网：[www.h5huodong.com](http://www.h5huodong.com)
+* 捷微官网：[www.jeewx.com](http://www.jeewx.com)
 * 技术论坛 ：[www.jeecg.org](http://www.jeecg.org)
-* 捷微技术QQ群 : 97460170
+* QQ交流群 : 97460170
 * 在线开发文档： [http://jeewx-h5.mydoc.io](http://http://jeewx-h5.mydoc.io)
 
 
 八、在线体验
 -----------------------------------
-*   捷微多公众号管理平台: [http://www.jeewx.com/jeewx](http://www.jeewx.com/jeewx)
-*   捷微H5活动平台: [http://www.h5huodong.com/](http://www.h5huodong.com/)
+*   捷微多公众号管理平台: [www.jeewx.com/jeewx](http://www.jeewx.com/jeewx)
+*   捷微H5活动平台: [www.h5huodong.com](http://www.h5huodong.com)
 *   官方公众号
 
 ![github](http://www.jeecg.org/data/attachment/forum/201601/25/180314mjvputsot6hhtvoa.jpg "jeewx521")
