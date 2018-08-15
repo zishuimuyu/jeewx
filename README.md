@@ -121,7 +121,7 @@ Jeewx是一款开源的微信运营平台，采用JAVA语言微服务架构，�
 * 捷微官网：[www.jeewx.com](http://www.jeewx.com)
 * 技术论坛 ：[www.jeecg.org](http://www.jeecg.org)
 * QQ交流群 : 97460170
-* 在线开发文档： [http://jeewx-h5.mydoc.io](http://http://jeewx-h5.mydoc.io)
+* 在线开发文档： [http://jeewx-h5.mydoc.io](http://jeewx-h5.mydoc.io)
 
 
 八、在线体验
