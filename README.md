@@ -133,7 +133,7 @@ Jeewx是一款开源的微信运营平台，采用JAVA语言微服务架构，�
 *   官方公众号
 
 ![github](http://www.jeecg.org/data/attachment/forum/201601/25/180314mjvputsot6hhtvoa.jpg "jeewx521")
-![jeewx](https://static.oschina.net/uploads/img/201807/26192949_MNyN.png "jeewx")
+![jeewx](http://www.jeecg.org/data/attachment/forum/201808/15/034735nna2fnc1hkhl1993.jpg "jeewx")
 
 
 九、系统截图 
