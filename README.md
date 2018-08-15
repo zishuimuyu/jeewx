@@ -88,9 +88,9 @@ Jeewx是一款开源的微信运营平台，采用JAVA语言微服务架构，�
 	  src/main/resources/db.properties
 
 
-五、项目介绍
+五、插件项目介绍
 -----------------------------------
-      捷微 - H5活动源码列表（陆续更新..）
+      捷微 - H5活动插件源码列表（陆续更新..）
 	  1.微信公众号管理   P3-Biz-commonweixin
 	  2.摇一摇送卡券     P3-Biz-shaketicket
 	  3.九宫格活动       P3-Biz-jiugongge
