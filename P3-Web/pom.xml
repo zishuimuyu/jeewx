@@ -11,7 +11,8 @@
 	<description>捷微-H5活动营销平台</description>
 	<groupId>org.h5huodong</groupId>
 	<artifactId>P3-Web</artifactId>
-	<name>P3-Web</name>
+	<name>Jeewx-Web</name>
+	<version>4.0</version>
 	<packaging>war</packaging>
     
 	<repositories>
