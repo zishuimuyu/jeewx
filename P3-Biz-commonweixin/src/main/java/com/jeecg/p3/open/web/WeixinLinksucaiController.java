@@ -46,7 +46,7 @@ public class WeixinLinksucaiController extends BaseController{
   /**
   * 签名密钥key
   */
-  private static final String SIGN_KEY = "4B6CAED6F7B19126F72780372E839CC47B1912B6CAED753F";
+  private static final String SIGN_KEY = "4B6CAED6F7B19126F72780372E839CC47B1912B6CAEDOSOS";
   private static String domain = "";
   private static String scanCodeDomain = "";
 	static{

@@ -126,7 +126,7 @@
 				<!-- mode: DEV开发模式(拦截器禁用);PUB发布模式(拦截器启用) -->
 				<property name="mode"><value>DEV</value></property>
 				<!-- signKey: 签名的密钥 -->
-				<property name="signKey"><value>4B6CAED6F7B19126F72780372E839CC47B1912B6CAED753F</value></property>
+				<property name="signKey"><value>4B6CAED6F7B19126F72780372E839CC47B1912B6CAEDOSOS</value></property>
 				<!-- excludeUrls:不进行拦截的url -->
 				<property name="excludeUrls">
 					<list>
