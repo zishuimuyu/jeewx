@@ -1,15 +1,14 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-	
-	<modelVersion>4.0.0</modelVersion>
 	<parent>
-		<groupId>org.h5huodong</groupId>
-		<artifactId>P3-parent</artifactId>
-		<version>2.1.2-SNAPSHOT</version>
+		<groupId>org.h5huodong.p3</groupId>
+		<artifactId>P3-starter-parent</artifactId>
+		<version>1.0.0-SNAPSHOT</version>
+		<relativePath>../parent/pom.xml</relativePath>
 	</parent>
 	
+	<modelVersion>4.0.0</modelVersion>
 	<description>捷微-H5活动营销平台</description>
-	<groupId>org.h5huodong</groupId>
 	<artifactId>P3-Web</artifactId>
 	<name>Jeewx-Web</name>
 	<version>4.0</version>
@@ -98,36 +97,33 @@
 		</testResources>
 	</build>
 	<dependencies>
+		<!-- P3 base jar -->
+ 	    <dependency>
+			<groupId>org.h5huodong.p3</groupId>
+			<artifactId>P3-Base-system</artifactId>
+		</dependency>
+		 <dependency>
+			<groupId>org.h5huodong.p3</groupId>
+			<artifactId>P3-Biz-commonweixin</artifactId>
+		</dependency>
+		<!-- P3 base jar -->
+		
+		<!-- 九宫格活动 -->
+		<dependency>
+			<groupId>org.h5huodong.p3</groupId>
+			<artifactId>P3-Biz-jiugongge</artifactId>
+		</dependency>
+		<!-- 摇一摇活动 -->
+		<dependency>
+			<groupId>org.h5huodong.p3</groupId>
+			<artifactId>P3-Biz-shaketicket</artifactId>
+		</dependency>
+		
 		<!-- commons-email -->
 		<dependency>
 			<groupId>org.apache.commons</groupId>
 			<artifactId>commons-email</artifactId>
-			<version>1.2</version>
 		</dependency>
 		<!-- commons-email -->
-		
-		<!-- P3 base jar -->
- 	    <dependency>
-			<groupId>org.h5huodong</groupId>
-			<artifactId>P3-Base-system</artifactId>
-			<version>2.0.2</version>
-		</dependency>
-		 <dependency>
-			<groupId>org.h5huodong</groupId>
-			<artifactId>P3-Biz-commonweixin</artifactId>
-			<version>1.0.0</version>
-		</dependency>
-		<!-- P3 base jar -->
-		
-		<dependency>
-			<groupId>org.h5huodong</groupId>
-			<artifactId>P3-Biz-jiugongge</artifactId>
-			<version>1.0.0</version>
-		</dependency>
-		<dependency>
-			<groupId>org.h5huodong</groupId>
-			<artifactId>P3-Biz-shaketicket</artifactId>
-			<version>1.0.0</version>
-		</dependency>
 	</dependencies>
 </project>
