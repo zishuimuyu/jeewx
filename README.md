@@ -8,6 +8,9 @@
 ![jeewx](https://static.oschina.net/uploads/img/201807/26192621_ou91.png "jeewx")
 <br>
 
+如果你更喜欢JEEWX3.0版本请点击链接下载：[https://github.com/zhangdaiscott/jeewx](https://github.com/zhangdaiscott/jeewx)
+
+
 一、平台简介
 -----------------------------------
 Jeewx是一款开源的微信运营平台，采用JAVA语言微服务架构，插件式开发，支持微信公众号、企业微信、各种微信活动、商城、小程序等功能。另外JEEWX自带强大的代码生成器，便于用户二次开发，JEEWX属于第一批微信开发商，在2014年荣获CSDN开发商大会第一名，目前功能已经非常完成，机制也非常健全。
