@@ -96,6 +96,7 @@ Jeewx是一款开源、免费的微信管家系统（多触点管理平台），
  * JEEWX 视频教程
 
      链接: https://pan.baidu.com/s/19VJdPBChjtw9xiksc6JmNw 提取码: k8we
+
      链接: https://pan.baidu.com/s/1PugTcpwpc7uc75pQJXtBuw 提取码: bxa3
 
 五、技术交流
