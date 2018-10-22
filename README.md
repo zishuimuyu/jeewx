@@ -94,6 +94,7 @@ Jeewx是一款开源、免费的微信管家系统（多触点管理平台），
   * [微信公众账号第三方平台全网发布源码（java）](http://blog.csdn.net/zhangdaiscott/article/details/48269837)
   * [JEEWX 非maven版源码下载](https://github.com/zhangdaiscott/jeewx-nomaven)
  * JEEWX 视频教程
+
      链接: https://pan.baidu.com/s/19VJdPBChjtw9xiksc6JmNw 提取码: k8we
      链接: https://pan.baidu.com/s/1PugTcpwpc7uc75pQJXtBuw 提取码: bxa3
 
