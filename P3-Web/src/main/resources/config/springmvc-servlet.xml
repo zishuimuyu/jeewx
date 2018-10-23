@@ -126,7 +126,7 @@
 				<!-- mode: DEV开发模式(拦截器禁用);PUB发布模式(拦截器启用) -->
 				<property name="mode"><value>DEV</value></property>
 				<!-- signKey: 签名的密钥 -->
-				<property name="signKey"><value>4B6CAED6F7B19126F72780372E839CC47B1912B6CAEDOSOS</value></property>
+				<property name="signKey"><value>4B6CAED6F7B2E839CC47B1912B6CAED753F19CFCA6OS</value></property>
 				<!-- excludeUrls:不进行拦截的url -->
 				<property name="excludeUrls">
 					<list>
@@ -143,23 +143,100 @@
 						<value>commongivebless/wjs/addetail.do</value>
 						<value>qrcodeinvite/js/toHome.do</value>
 						<value>qrcodeinvite/js/detail.do</value>
-						
+					
+						<!--获取页面head和footer -->
+                        <value>system/queryHeadAndFooter.do</value>
+	
 						<!-- 智能搭配-->
 						<value>dzdp/toIndex.do</value>
 						<value>dzdp/toStep.do</value>
 						<value>dzdp/toReport.do</value>
+						<value>makemoney/toHome.do</value>
 						
 						<!-- 素材链接-->
 						<value>weixinLinksucai/link.do</value>
 						
+						<!-- 扫描二维码登录 -->
+						<value>system/validateLogin.do</value>
+						<value>system/chooseWeixinId.do</value>
+						<value>system/getQrcodeUrl.do</value>
+						
+						<!-- 注册 -->
+						<value>system/register.do</value>
+						<value>system/check.do</value>
+						<value>system/doSendMail.do</value>
+						<value>system/doRegister.do</value>
+						
+						<!-- 未签到协议 -->
+						<value>system/toProtocol.do</value>
+						<value>system/agree.do</value>
+						
+						<!-- 个人钱包 -->
+						<value>system/back/jwSystemAccount/toIndividual.do</value>
+						
 						<!-- 素材链接-->
 						<value>linksucai/link.do</value>
+						
+						<!-- 分销商城后端回调 -->
+						<value>fx/mall/payCallBack.do</value>
+						
+						<!-- 微场景 -->
+						<value>fullpage/act/toIndex.do</value>
+
 						<!-- 扫码支付-->
 						<value>ali/pay/pay.do</value>
 						<value>ali/pay/paysuccess.do</value>
 						<value>ali/pay/notify.do</value>
 						<value>ali/pay/refundNotify.do</value>
+
+						<!-- 热门活动-->
+						<value>hotact/list.do</value>
+						<value>hotact/getHotAct.do</value>
+
+						<!-- 去广告-->
+						<value>system/doEdit.do</value>
+
+						<!-- 下载二维码-->
+						<value>CommonController/downloadQRCode.do</value>
 						
+						<!-- 文章资讯-->
+						<value>newsController/getNewsClassify.do</value>
+						<value>newsController/getNewslist.do</value>
+						
+						<!--代理商 -->
+						<value>agent/agentRegister.do</value>
+						<value>agent/checkAgent.do</value>
+						<value>agent/doAdd.do</value>
+						<value>agent/doUpload.do</value>
+						
+						<!-- 综合商城和支付 -->
+						<value>eshop/payCallBackNotify.do</value>
+						<value>paycenter/weixinpay/toPay.do</value>
+			            <!-- 接口拦截排除 -->
+						<value>api/Project/getAllProject.do</value>
+						<value>api/Project/getProjectByCode.do</value>
+						<value>api/Project/getProjectByClassifyId.do</value>
+						<!-- 认证发送验证码拦截排除-->
+						<value>CommonController/sendMsgCode.do</value>
+                                                
+						<!-- 视频模板-->
+						<value>videoController/getVideolist.do</value>
+						<value>videoController/getVideoClassify.do</value>
+						<value>videoController/getVideoDetail.do</value>
+						<value>videoController/updateVideoDetail.do</value>	
+						<!-- 判断用户是否有公众号权限-->	
+						<value>CommonController/checkPermission.do</value>
+                        <!-- 微信接收消息 -->
+						<value>wechatController.do</value>
+                        <!-- 微信文章访问 -->
+						<value>weixinNewsController/goContent.do</value>
+					</list>
+				</property>
+				<property name="excludeContainUrls">
+					<list>
+						<value>api/eshop/</value>
+						<value>api/cms/</value>
+						<value>cms/</value>
 					</list>
 				</property>
 			</bean>
@@ -167,6 +244,7 @@
 		
 		<mvc:interceptor>
 			<mvc:mapping path="/**/back/**/*.do" />
+			<mvc:mapping path="/p3/cms/*.do"/>
 			<bean class="com.jeecg.p3.system.interceptors.AuthInterceptor">
 				<!-- mode: DEV开发模式(拦截器禁用);PUB发布模式(拦截器启用) -->
 				<property name="mode"><value>DEV</value></property>
@@ -177,6 +255,9 @@
 						<value>system/back/home.do</value>
 						<value>system/back/article/toIndex.do</value>
 						<value>system/back/article/toArticle.do</value>
+						<value>system/preSelectJwid.do</value>
+						<value>system/switchDefaultOfficialAcco.do</value>
+						<value>system/back/jwSystemAccountAPI/getUserAccountAmount.do</value>
 					</list>
 				</property>
 			</bean>

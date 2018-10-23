@@ -14,7 +14,7 @@ public class CodeToolUtil {
 
 	public static void main(String[] args) {
 		 /** 此处修改成你的 表名 和 中文注释***/
-         CodeGenerateFactory.codeGenerateByFTL("eshop_order_items", "订单明细",FtlDef.KEY_TYPE_02);
+         CodeGenerateFactory.codeGenerateByFTL("weixin_subscribe", "关注语",FtlDef.KEY_TYPE_02);
 
 	}
 }

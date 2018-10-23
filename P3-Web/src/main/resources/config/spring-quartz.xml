@@ -24,32 +24,6 @@
 		<property name="jobDetail" ref="refreshTokenTaskJob" />
 		<property name="cronExpression" value="0 0/10 * * * ?" />
 	</bean>
-
-	<!-- 定时任务配置   P3-Biz-fxmall 佣金结算定时任务-->
-	<bean id="commissionThawTaskJob" class="org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean">
-		<property name="targetObject" ref="commissionThawTask" />
-		<property name="targetMethod" value="run" />
-		<property name="concurrent" value="false" />
-	</bean>
-	
-	<!-- 定时任务配置   P3-Biz-fxmall 佣金结算定时任务-->
-	<bean id="commissionThawTaskJobCronTrigger" class="org.springframework.scheduling.quartz.CronTriggerFactoryBean">
-		<property name="jobDetail" ref="commissionThawTaskJob" />
-		<property name="cronExpression" value="0 0/10 * * * ?" /><!-- 定时任务表达式：http://cron.qqe2.com/ -->
-	</bean>
-	
-	<!-- 定时任务配置   P3-Biz-fxmall 订单取消定时任务-->
-	<bean id="cancelOrderTaskJob" class="org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean">
-		<property name="targetObject" ref="cancelOrderTask" />
-		<property name="targetMethod" value="run" />
-		<property name="concurrent" value="false" />
-	</bean>
-	
-	<!-- 定时任务配置   P3-Biz-fxmall 订单取消定时任务-->
-	<bean id="cancelOrderTaskJobCronTrigger" class="org.springframework.scheduling.quartz.CronTriggerFactoryBean">
-		<property name="jobDetail" ref="cancelOrderTaskJob" />
-		<property name="cronExpression" value="0 0/5 * * * ?" /><!-- 定时任务表达式：http://cron.qqe2.com/ -->
-	</bean>
 	
 	<!-- 定时任务调度器 -->
 	<bean id="schedulerFactory" lazy-init="false" autowire="no"
@@ -58,10 +32,6 @@
 			<list>
 				<!-- 定时任务配置   P3-Base-system 重置AccseeToken的定时任务 -->
 				<ref bean="refreshTokenTaskJobCronTrigger" />
-				<!-- 定时任务配置  P3-Biz-fxmall佣金结算定时任务-->
-				<ref bean="commissionThawTaskJobCronTrigger" />
-				<!-- 定时任务配置  P3-Biz-fxmall订单取消定时任务-->
-				<ref bean="cancelOrderTaskJobCronTrigger" />
 			</list>
 		</property>
 	</bean>

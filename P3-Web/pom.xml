@@ -4,11 +4,10 @@
 		<groupId>org.h5huodong.p3</groupId>
 		<artifactId>P3-starter-parent</artifactId>
 		<version>1.0.0-SNAPSHOT</version>
-		<relativePath>../parent/pom.xml</relativePath>
 	</parent>
 	
 	<modelVersion>4.0.0</modelVersion>
-	<description>捷微-H5活动营销平台</description>
+	<description>捷微-H5活动平台</description>
 	<artifactId>P3-Web</artifactId>
 	<name>Jeewx-Web</name>
 	<version>4.0</version>
@@ -97,33 +96,52 @@
 		</testResources>
 	</build>
 	<dependencies>
-		<!-- P3 base jar -->
- 	    <dependency>
-			<groupId>org.h5huodong.p3</groupId>
-			<artifactId>P3-Base-system</artifactId>
-		</dependency>
-		 <dependency>
-			<groupId>org.h5huodong.p3</groupId>
-			<artifactId>P3-Biz-commonweixin</artifactId>
-		</dependency>
-		<!-- P3 base jar -->
-		
-		<!-- 九宫格活动 -->
-		<dependency>
-			<groupId>org.h5huodong.p3</groupId>
-			<artifactId>P3-Biz-jiugongge</artifactId>
-		</dependency>
-		<!-- 摇一摇活动 -->
-		<dependency>
-			<groupId>org.h5huodong.p3</groupId>
-			<artifactId>P3-Biz-shaketicket</artifactId>
-		</dependency>
-		
 		<!-- commons-email -->
 		<dependency>
 			<groupId>org.apache.commons</groupId>
 			<artifactId>commons-email</artifactId>
 		</dependency>
 		<!-- commons-email -->
+		
+		<!-- 系统管理模块 -->
+ 	    <dependency>
+			<groupId>org.h5huodong.p3</groupId>
+			<artifactId>P3-Base-system</artifactId>
+		</dependency>
+		
+		<!-- 微信公众管理平台 -->
+		 <dependency>
+			<groupId>org.h5huodong.p3</groupId>
+			<artifactId>P3-Biz-commonweixin</artifactId>
+		</dependency>
+		<!-- 九宫格 -->
+		<dependency>
+			<groupId>org.h5huodong.p3</groupId>
+			<artifactId>P3-Biz-jiugongge</artifactId>
+		</dependency>
+		<!-- 摇一摇-->
+		<dependency>
+			<groupId>org.h5huodong.p3</groupId>
+			<artifactId>P3-Biz-shaketicket</artifactId>
+		</dependency>
+		<!-- 微网站
+		<dependency>
+			<groupId>org.h5huodong.p3</groupId>
+			<artifactId>P3-Biz-cms</artifactId>
+			<version>1.0.0</version>
+			<type>jar</type>
+		</dependency>-->
+		<!-- 斧头帮砍价
+		<dependency>
+			<groupId>org.h5huodong</groupId>
+			<artifactId>P3-Biz-commonftb</artifactId>
+			<version>1.0.0</version>
+		</dependency> -->
+		<!-- 新年砍价
+		<dependency>
+			<groupId>org.h5huodong</groupId>
+			<artifactId>P3-Biz-gzbargain-newYear</artifactId>
+			<version>2.0.1</version>
+		</dependency> -->
 	</dependencies>
 </project>
