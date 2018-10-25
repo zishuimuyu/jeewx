@@ -1,16 +1,13 @@
 echo 'Start to build project'
 @echo off
 
-cd P3-Biz-commonweixin
+cd jeecg-p3-biz-alipay-single
 call mvn install package -Dmaven.test.skip=true
 
-cd ..\P3-Biz-jiugongge
+cd ..\jeecg-p3-biz-qywx
 call mvn install package -Dmaven.test.skip=true
 
-cd ..\P3-Biz-shaketicket
-call mvn install package -Dmaven.test.skip=true
-
-cd ..\P3-Web
+cd ..\jeewx
 set MAVEN_OPTS=%MAVEN_OPTS% -Xms1024M -Xmx1024M -XX:PermSize=256M -XX:MaxPermSize=256M
 call mvn tomcat:run
 
