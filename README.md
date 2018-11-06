@@ -5,7 +5,7 @@ JeeWx 微信管家平台，简称“捷微”.
 当前最新版本： 3.2.0（发布日期：20180712）
 官网：[www.jeewx.com](http://www.jeewx.com) 
 
-捷微已经推出微信管家二代码产品（微服务化、bootstrapUI，更强大的功能），如果你需要请点击 [https://gitee.com/jeecg/h5huodong](https://gitee.com/jeecg/h5huodong)
+从2018年7月捷微管家推出二代产品（微服务化、bootstrapUI，更强大的功能、高并发大数据） [https://gitee.com/jeecg/h5huodong](https://gitee.com/jeecg/h5huodong)
 
 ![jeewx](https://static.oschina.net/uploads/img/201807/26192621_ou91.png "jeewx")
 <br>
