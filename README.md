@@ -5,13 +5,15 @@ JeeWx 微信管家平台，简称“捷微”.
 当前最新版本： 3.2.0（发布日期：20180712）
 官网：[www.jeewx.com](http://www.jeewx.com) 
 
-![jeewx](https://static.oschina.net/uploads/img/201807/26192621_ou91.png "jeewx")
+从2018年7月捷微管家推出二代产品（微服务化、bootstrapUI，更强大的功能、高并发大数据） [https://gitee.com/jeecg/h5huodong](https://gitee.com/jeecg/h5huodong)
+
+![jeewx](https://images.gitee.com/uploads/images/2019/0403/170455_e74d2116_57093.png "jeewx")
 <br>
 
 一、平台简介
 -----------------------------------
 Jeewx是一款开源、免费的微信管家系统（多触点管理平台），2014年荣获CSDN开发商大会第一名。采用JAVA语言，支持微信公众号、微信企业号、支付宝服务窗、小程序等多触点管理。Jeewx实现了微信公众号、支付窗、微信企业号、小程序等触点的基础管理功能，集成了Oauth2.0、扩展业务、工具箱、报表等实用模块，强大的代码生成器，便于用户二次开发。
-![jeewx](https://static.oschina.net/uploads/img/201807/26193036_XzZ1.png "jeewx")
+![jeewx](https://images.gitee.com/uploads/images/2019/0403/170455_6005a5de_57093.png "jeewx")
 
 二、平台特性
 -----------------------------------
@@ -109,16 +111,16 @@ Jeewx是一款开源、免费的微信管家系统（多触点管理平台），
 *   体验账号：ceshi/123456 (可注册)
 *   官方公众号："JEEWX捷微管家"
 
-![jeewx](https://static.oschina.net/uploads/img/201807/26192949_MNyN.png "jeewx")
+![jeewx](https://images.gitee.com/uploads/images/2019/0403/170455_efbdc70c_57093.png "jeewx")
 
 
 七、系统截图 
 -----------------------------------
-![jeewx](https://static.oschina.net/uploads/img/201807/26192218_JhGj.png "jeewx")
-![jeewx](https://static.oschina.net/uploads/img/201807/26192231_JVRQ.png "jeewx")
+![jeewx](https://images.gitee.com/uploads/images/2019/0403/170455_90b28d53_57093.png "jeewx")
+![jeewx](https://images.gitee.com/uploads/images/2019/0403/170455_9db8a9fb_57093.png "jeewx")
 ![jeewx](https://camo.githubusercontent.com/eaeb5055fa7703fb2fd272e03d7bd74cab9bbffb/687474703a2f2f696d672e626c6f672e6373646e2e6e65742f32303136303832323137333832383338313f77617465726d61726b2f322f746578742f6148523063446f764c324a736232637559334e6b626935755a5851762f666f6e742f3561364c354c32542f666f6e7473697a652f3430302f66696c6c2f49304a42516b46434d413d3d2f646973736f6c76652f37302f677261766974792f43656e746572 "jeewx")
-![jeewx](https://camo.githubusercontent.com/e08dc94ca72e7ae671cee5dd732b5737c4a79f70/687474703a2f2f696d672e626c6f672e6373646e2e6e65742f32303136303332333135323530383832373f77617465726d61726b2f322f746578742f6148523063446f764c324a736232637559334e6b626935755a5851762f666f6e742f3561364c354c32542f666f6e7473697a652f3430302f66696c6c2f49304a42516b46434d413d3d2f646973736f6c76652f37302f677261766974792f43656e746572 "jeewx")
-![jeewx](https://static.oschina.net/uploads/img/201807/26192243_Z6kP.png "jeewx")
-![jeewx](https://static.oschina.net/uploads/img/201807/26192252_wNNj.png "jeewx")
-![jeewx](https://static.oschina.net/uploads/img/201807/26192259_xGJx.png "jeewx")
+![jeewx](https://images.gitee.com/uploads/images/2019/0403/170458_4b8a3c86_57093.jpeg "jeewx")
+![jeewx](https://images.gitee.com/uploads/images/2019/0403/170456_e0083a6e_57093.png "jeewx")
+![jeewx](https://images.gitee.com/uploads/images/2019/0403/170456_794c47a5_57093.png "jeewx")
+![jeewx](https://images.gitee.com/uploads/images/2019/0403/170456_178facbc_57093.png "jeewx")
 
