@@ -110,7 +110,7 @@ Jeewx是一款开源、免费的微信管家系统（多触点管理平台），
 *   在线演示: [http://www.jeewx.com/jeewx](http://www.jeewx.com/jeewx)
 *   官方公众号："JEECG"
 
-![jeewx](http://www.jeewx.com/app/img/qrcode_jeewx.jpg "jeewx")
+![jeewx](https://static.oschina.net/uploads/img/201906/04153906_kuT9.jpg "jeewx")
 
 
 七、系统截图 
