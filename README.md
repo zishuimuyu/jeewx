@@ -108,10 +108,9 @@ Jeewx是一款开源、免费的微信管家系统（多触点管理平台），
 六、在线体验
 -----------------------------------
 *   在线演示: [http://www.jeewx.com/jeewx](http://www.jeewx.com/jeewx)
-*   体验账号：ceshi/123456 (可注册)
-*   官方公众号："JEEWX捷微管家"
+*   官方公众号："JEECG"
 
-![jeewx](https://static.oschina.net/uploads/img/201807/26192949_MNyN.png "jeewx")
+![jeewx](http://www.jeewx.com/app/img/qrcode_jeewx.jpg "jeewx")
 
 
 七、系统截图 
