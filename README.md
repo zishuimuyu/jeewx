@@ -1,4 +1,4 @@
-# 新版本已出，强烈推荐： https://github.com/zhangdaiscott/jeewx-boot
+# 新版本已出，强烈推荐：https://gitee.com/jeecg/jeewx-boot
 ======================================================================================
 
 
